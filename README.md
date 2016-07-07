@@ -1,4 +1,4 @@
-# PaperBird Browser for BlackBerry 10
+PaperBird Browser for BlackBerry 10
 ====
 
 自2016.7.7起，本项目正式开源。
