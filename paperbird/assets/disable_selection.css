@@ -1,0 +1,8 @@
+body{
+   -webkit-touch-callout: none;
+   -moz-user-select: none; /*»ğºü*/
+   -webkit-user-select: none;  /*webkitä¯ÀÀÆ÷*/
+   -ms-user-select: none;   /*IE10*/
+   -khtml-user-select: none; /*ÔçÆÚä¯ÀÀÆ÷*/
+   user-select: none;
+}

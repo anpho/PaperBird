@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+
+   Copyright (c) 2011-2015 BlackBerry Limited.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+
+<!-- BlackBerry 10 application descriptor file.
+
+    Specifies parameters for identifying, installing, and launching native applications on BlackBerry 10.
+
+-->
+
+    <!-- A universally unique application identifier. Must be unique across all BlackBerry 10 applications.
+         Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
+    <id>anpho.browser</id>
+    <configuration name="Device-Debug">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm/o.le-v7-g/paperbird" entry="true" type="Qnx/Elf">paperbird</asset>
+    </configuration>
+    <configuration name="Device-Release">
+       <entryPointType>Qnx/Cascades</entryPointType>
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm/o.le-v7/paperbird.so" entry="true" type="Qnx/Elf">paperbird.so</asset>
+    </configuration>
+    <configuration name="Device-Profile">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm-p/o.le-v7-g/paperbird" entry="true" type="Qnx/Elf">paperbird</asset>
+    </configuration>
+    <configuration name="Simulator-Debug">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="x86/o-g/paperbird" entry="true" type="Qnx/Elf">paperbird</asset>
+    </configuration>
+
+    <!-- The name that is displayed in the BlackBerry 10 application installer.
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+    <name>
+       PaperBird Beta
+       <text xml:lang="zh-CN">&#x7eb8;&#x83ba; Beta</text>
+    </name>
+
+    <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
+         Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
+         An updated version of application must have a versionNumber value higher than the previous version. Required. -->
+    <versionNumber>2.0.16</versionNumber>
+
+    <!-- Fourth digit segment of the package version. First three segments are taken from the
+         <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
+    <buildId>517</buildId>
+    <packageLocale>zh-CN</packageLocale>
+
+    <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
+    <!-- <versionLabel></versionLabel> -->
+
+    <!-- Description, displayed in the BlackBerry 10 application installer.
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+    <description>
+       a lightweight web browser
+       <text xml:lang="zh-CN">&#x66f4;&#x4e3a;&#x6613;&#x7528;&#x7684;&#x6d4f;&#x89c8;&#x5668;</text>
+    </description>
+
+    <!-- Copyright information. Optional. -->
+    <!-- <copyright></copyright> -->
+
+    <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
+    <icon>
+       <image>icon2.png</image>
+    </icon>
+    <authorId>gYAAgMy-I-SFJtVvioZxVXYQjhA</authorId>
+    <author>anpho</author>
+
+    <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
+    <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
+
+    <initialWindow>
+        <autoOrients>true</autoOrients>
+        <systemChrome>none</systemChrome>
+    </initialWindow>
+
+    <!--  The icon for the application, which should be 114x114. -->
+
+    <asset path="icon.png">icon.png</asset>
+   	<asset path="assets" dest="assets">
+    	assets
+    	<exclude name="**/*.qml"/>
+    </asset>
+
+    <!-- Locale support -->
+    <asset path="translations" dest="qm">
+        <include name="*.qm"/>
+    </asset>
+    <asset path="icon2.png">icon2.png</asset>
+
+    <!-- Request permission to execute native code.  Required for native applications. -->
+    <permission system="true">run_native</permission>
+    <permission>access_shared</permission>
+    <permission>access_internet</permission>
+    <permission>access_location_services</permission>
+    <permission>record_audio</permission>
+    <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib"/>
+    <env var="CASCADES_THEME" value="default?primaryColor=0xEFC028&amp;primaryBase=0xE27805"/>
+
+	<!-- invocation target config -->
+	 <invoke-target id="cn.anpho.browser">
+        <invoke-target-type>application</invoke-target-type>
+        <icon>
+            <image>icon.png</image>
+        </icon>
+        <filter>
+            <action>bb.action.OPEN</action>
+            <mime-type>*</mime-type>
+            <property var="uris" value="http:,https:,ftp:,rtsp:,websearch:"/>
+        </filter>
+        <filter>
+            <action>bb.action.OPEN</action>
+            <mime-type>text/html</mime-type>
+            <mime-type>application/xhtml+xml</mime-type>
+            <mime-type>image/svg+xml</mime-type>
+            <property var="uris" value="file://"/>
+            <property var="exts" value="htm,html,xhtml,svg"/>
+        </filter>
+    </invoke-target>
+
+</qnx>

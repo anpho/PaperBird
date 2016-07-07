@@ -1,0 +1,15 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+	<file>assets/main.qml</file>
+	<file>assets/CoreObject.qml</file>
+	<file>assets/Net.qml</file>
+	<file>assets/Sheet_About.qml</file>
+	<file>assets/Sheet_Settings.qml</file>
+	<file>assets/Tab_Bookmark.qml</file>
+	<file>assets/Tab_History.qml</file>
+	<file>assets/Tab_PageTemplate.qml</file>
+	<file>assets/WebPage.qml</file>
+	<file>assets/BookmarkEditDialog.qml</file>
+</qresource>
+</RCC>
