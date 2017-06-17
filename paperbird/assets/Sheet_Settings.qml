@@ -29,6 +29,9 @@ Sheet {
                 id: sst
                 position: SystemUiPosition.BottomCenter
 
+            },
+            WebView {
+                id: configwebview
             }
         ]
         titleBar: TitleBar {
@@ -53,7 +56,7 @@ Sheet {
                     Label {
                         text: qsTr("Visual Theme")
                         bottomMargin: 20.0
-                        textStyle.fontWeight: FontWeight.W100
+                        textStyle.fontWeight: FontWeight.W400
                         textStyle.fontSize: FontSize.Large
                     }
                     Label {
@@ -129,8 +132,8 @@ Sheet {
                             ListItemComponent {
                                 type: "item"
                                 Container {
-                                    preferredHeight: ui.du(8)
-                                    preferredWidth: ui.du(8)
+                                    preferredHeight: ui.du(12)
+                                    preferredWidth: ui.du(12)
                                     background: Color.create(ListItemData.color)
                                     topMargin: ui.du(1.0)
                                     leftMargin: ui.du(1.0)
@@ -161,7 +164,7 @@ Sheet {
                     Label {
                         text: qsTr("Homepage")
                         bottomMargin: 20.0
-                        textStyle.fontWeight: FontWeight.W100
+                        textStyle.fontWeight: FontWeight.W400
                         textStyle.fontSize: FontSize.Large
                     }
                     Label {
@@ -201,10 +204,12 @@ Sheet {
                             imageSource: "asset:///icon/ic_done.png"
                         }
                     }
+                    Divider {
 
+                    }
                     Label {
                         text: qsTr("Search Engine")
-                        textStyle.fontWeight: FontWeight.W100
+                        textStyle.fontWeight: FontWeight.W400
                         textStyle.fontSize: FontSize.Large
                     }
                     Label {
@@ -248,9 +253,12 @@ Sheet {
                         }
                         title: qsTr("Selected Search Engine:")
                     }
+                    Divider {
+
+                    }
                     Label {
                         text: qsTr("User Agent")
-                        textStyle.fontWeight: FontWeight.W100
+                        textStyle.fontWeight: FontWeight.W400
                         textStyle.fontSize: FontSize.Large
                     }
                     Label {
@@ -282,29 +290,31 @@ Sheet {
                         }
                         title: qsTr("Selected UA:")
                     }
-                    /*
+
                     Label {
                         text: qsTr("Download Manager")
                         bottomMargin: 20.0
                         textStyle.fontWeight: FontWeight.W100
                         textStyle.fontSize: FontSize.Large
-                        enabled: false
+                        visible: false
                     }
                     Label {
                         text: qsTr("File type to monitor:")
                         textStyle.fontWeight: FontWeight.W100
-                        enabled: false
+                        visible: false
+
                     }
                     Container {
                         layout: StackLayout {
                             orientation: LayoutOrientation.LeftToRight
 
                         }
+                        visible: false
                         TextField {
-                            text: _app.getv("ext", "zip;txt;apk")
-                            hintText: qsTr("Example: zip;txt;apk")
+                            text: _app.getv("ext", "zip;txt;apk;jpg;png;mp3")
+                            hintText: qsTr("Example: zip;txt;apk...")
                             id: ext_text
-                            enabled: false
+
                         }
                         Button {
                             preferredWidth: 1.0
@@ -313,21 +323,23 @@ Sheet {
                             onClicked: {
                                 _app.setv("ext", ext_text.text);
                             }
-                            enabled: false
+
                         }
                     }
                     Label {
                         text: qsTr("Download files to:")
                         textStyle.fontWeight: FontWeight.W100
-                        enabled: false
+                        visible: false
+
                     }
                     Container {
                         layout: StackLayout {
                             orientation: LayoutOrientation.LeftToRight
 
                         }
+                        visible: false
                         TextField {
-                            enabled: false
+
                             hintText: qsTr("Choose a path")
                             id: download_path_text
                             text: _app.getv("downloadpath", "/accounts/1000/shared/downloads")
@@ -360,10 +372,11 @@ Sheet {
                             onClicked: {
                                 fpd.open()
                             }
-                            enabled: false
+
                         }
-                        }*/
+                    }
                 }
+
                 Header {
                     title: qsTr("GENERAL SETTINGS")
                 }
@@ -374,7 +387,7 @@ Sheet {
                     rightPadding: 20.0
                     Label {
                         text: qsTr("Startup")
-                        textStyle.fontWeight: FontWeight.W100
+                        textStyle.fontWeight: FontWeight.W400
                         textStyle.fontSize: FontSize.Large
                     }
                     Label {
@@ -399,7 +412,163 @@ Sheet {
                         }
                     }
                 }
+                Divider {
 
+                }
+                Container {
+                    topPadding: 20.0
+                    leftPadding: 20.0
+                    bottomPadding: 20.0
+                    rightPadding: 20.0
+                    Label {
+                        text: qsTr("Cache Management")
+                        textStyle.fontWeight: FontWeight.W400
+                        textStyle.fontSize: FontSize.Large
+                    }
+                    Label {
+                        text: qsTr("When app exits :")
+                        textStyle.fontWeight: FontWeight.W100
+                    }
+                    Container {
+                        preferredWidth: Infinity
+                        layout: GridLayout {
+                            columnCount: 2
+                        }
+                        horizontalAlignment: HorizontalAlignment.Fill
+                        Container {
+                            layout: StackLayout {
+                                orientation: LayoutOrientation.LeftToRight
+
+                            }
+                            verticalAlignment: VerticalAlignment.Center
+                            CheckBox {
+                                checked: _app.getv("clearcache", "false") === "true"
+                                onCheckedChanged: {
+                                    _app.setv("clearcache", checked)
+                                }
+
+                                verticalAlignment: VerticalAlignment.Center
+
+                            }
+                            Label {
+                                text: qsTr("Clear Cache")
+                                horizontalAlignment: HorizontalAlignment.Left
+                                verticalAlignment: VerticalAlignment.Center
+                            }
+                        }
+                        Button {
+                            text: qsTr("Clear Now")
+                            preferredWidth: 1.0
+                            horizontalAlignment: HorizontalAlignment.Right
+                            verticalAlignment: VerticalAlignment.Center
+                            onClicked: {
+                                configwebview.storage.clear();
+                                sst.body = qsTr("Cache Cleared");
+                                sst.show();
+                                console.log("CACHE CLEARED.");
+                            }
+                        }
+                        Container {
+                            layout: StackLayout {
+                                orientation: LayoutOrientation.LeftToRight
+
+                            }
+                            verticalAlignment: VerticalAlignment.Center
+                            CheckBox {
+                                checked: _app.getv("clearhistory", "false") === "true"
+                                onCheckedChanged: {
+                                    _app.setv("clearhistory", checked)
+                                }
+                                verticalAlignment: VerticalAlignment.Center
+                                horizontalAlignment: HorizontalAlignment.Left
+                            }
+                            Label {
+                                text: qsTr("Clear Histories")
+                                verticalAlignment: VerticalAlignment.Center
+                                horizontalAlignment: HorizontalAlignment.Left
+                            }
+                        }
+                        Button {
+                            text: qsTr("Clear Now")
+                            preferredWidth: 1.0
+                            horizontalAlignment: HorizontalAlignment.Right
+                            verticalAlignment: VerticalAlignment.Center
+                            onClicked: {
+                                _app.clearHistories();
+                                sst.body = "Histories Cleared"
+                                sst.show();
+                                console.log("HISTORY CLEARED.");
+                            }
+                        }
+                        Container {
+                            layout: StackLayout {
+                                orientation: LayoutOrientation.LeftToRight
+
+                            }
+                            verticalAlignment: VerticalAlignment.Center
+                            visible: false
+                            CheckBox {
+
+                                checked: _app.getv("clearpassword", "false") === "true"
+                                onCheckedChanged: {
+                                    _app.setv("clearpassword", checked)
+                                }
+                                verticalAlignment: VerticalAlignment.Center
+                            }
+                            Label {
+                                text: qsTr("Clear Saved Passwords")
+                                verticalAlignment: VerticalAlignment.Center
+                                horizontalAlignment: HorizontalAlignment.Left
+                            }
+                        }
+                        Button {
+                            text: qsTr("Clear Now")
+                            preferredWidth: 1.0
+                            verticalAlignment: VerticalAlignment.Center
+                            horizontalAlignment: HorizontalAlignment.Right
+                            visible: false
+                        }
+                    }
+
+                }
+                Divider {
+
+                }
+                Container {
+                    topPadding: 20.0
+                    leftPadding: 20.0
+                    bottomPadding: 20.0
+                    rightPadding: 20.0
+                    Label {
+                        text: qsTr("Configurations")
+                        textStyle.fontWeight: FontWeight.W400
+                        textStyle.fontSize: FontSize.Large
+                    }
+                    Label {
+                        text: qsTr("In case you want a fresh install, here's a red button :")
+                        textStyle.fontWeight: FontWeight.W100
+                        multiline: true
+                    }
+                    Button {
+                        text: qsTr("RESET")
+                        color: Color.Red
+                        horizontalAlignment: HorizontalAlignment.Center
+
+                        onClicked: {
+                            configwebview.storage.clear();
+                            _app.clearBookmarks();
+                            _app.clearHistories();
+                            console.log("APP RESETED.");
+                            sst.body = qsTr("App Reseted");
+                            sst.show();
+                        }
+                    }
+                    Label {
+                        text: qsTr("*This will remove all your configurations includes: bookmarks, app cache, web histories, saved passwords, etc.")
+                        textStyle.fontWeight: FontWeight.W100
+                        multiline: true
+                    }
+                }
             }
         }
     }

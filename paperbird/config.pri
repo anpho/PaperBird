@@ -200,6 +200,8 @@ config_pri_source_group1 {
         $$quote($$BASEDIR/src/download.h)
 }
 
+INCLUDEPATH += $$quote($$BASEDIR/src)
+
 CONFIG += precompile_header
 
 PRECOMPILED_HEADER = $$quote($$BASEDIR/precompiled.h)

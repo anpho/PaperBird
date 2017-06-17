@@ -4,20 +4,20 @@
 <context>
     <name>ApplicationUI</name>
     <message>
-        <location filename="../src/applicationui.cpp" line="141"/>
-        <location filename="../src/applicationui.cpp" line="156"/>
+        <location filename="../src/applicationui.cpp" line="144"/>
+        <location filename="../src/applicationui.cpp" line="159"/>
         <source>Create table error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="230"/>
-        <location filename="../src/applicationui.cpp" line="316"/>
-        <location filename="../src/applicationui.cpp" line="338"/>
+        <location filename="../src/applicationui.cpp" line="233"/>
+        <location filename="../src/applicationui.cpp" line="319"/>
+        <location filename="../src/applicationui.cpp" line="341"/>
         <source>Delete table error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="386"/>
+        <location filename="../src/applicationui.cpp" line="389"/>
         <source>Delete bookmark error: %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -101,175 +101,267 @@
 <context>
     <name>Sheet_Settings</name>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="35"/>
+        <location filename="../assets/Sheet_Settings.qml" line="38"/>
         <source>SETTINGS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="37"/>
+        <location filename="../assets/Sheet_Settings.qml" line="40"/>
         <source>CLOSE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="46"/>
+        <location filename="../assets/Sheet_Settings.qml" line="49"/>
         <source>UI SETTINGS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="54"/>
+        <location filename="../assets/Sheet_Settings.qml" line="57"/>
         <source>Visual Theme</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="60"/>
+        <location filename="../assets/Sheet_Settings.qml" line="63"/>
         <source>Choose your theme below, Dark theme is better for OLED devices.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="70"/>
+        <location filename="../assets/Sheet_Settings.qml" line="73"/>
         <source>App Theme:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="80"/>
+        <location filename="../assets/Sheet_Settings.qml" line="83"/>
         <source>BRIGHT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="87"/>
+        <location filename="../assets/Sheet_Settings.qml" line="90"/>
         <source>DARK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="111"/>
+        <location filename="../assets/Sheet_Settings.qml" line="114"/>
         <source>Theme Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="154"/>
+        <location filename="../assets/Sheet_Settings.qml" line="157"/>
         <source>BROWSER SETTINGS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="162"/>
-        <location filename="../assets/Sheet_Settings.qml" line="390"/>
+        <location filename="../assets/Sheet_Settings.qml" line="165"/>
+        <location filename="../assets/Sheet_Settings.qml" line="403"/>
         <source>Homepage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="168"/>
+        <location filename="../assets/Sheet_Settings.qml" line="171"/>
         <source>You can set the homepage URL here, or through other places&apos; context menu.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="179"/>
+        <location filename="../assets/Sheet_Settings.qml" line="182"/>
         <source>Set homepage URL here</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="187"/>
-        <location filename="../assets/Sheet_Settings.qml" line="198"/>
+        <location filename="../assets/Sheet_Settings.qml" line="190"/>
+        <location filename="../assets/Sheet_Settings.qml" line="201"/>
         <source>Homepage Set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="206"/>
+        <location filename="../assets/Sheet_Settings.qml" line="211"/>
         <source>Search Engine</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="211"/>
+        <location filename="../assets/Sheet_Settings.qml" line="216"/>
         <source>When you type something in address bar and hit GO, the selected search engine is used to search for it.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="219"/>
+        <location filename="../assets/Sheet_Settings.qml" line="224"/>
         <source>Bing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="223"/>
+        <location filename="../assets/Sheet_Settings.qml" line="228"/>
         <source>Google</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="227"/>
+        <location filename="../assets/Sheet_Settings.qml" line="232"/>
         <source>Baidu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="231"/>
+        <location filename="../assets/Sheet_Settings.qml" line="236"/>
         <source>Yahoo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="235"/>
+        <location filename="../assets/Sheet_Settings.qml" line="240"/>
         <source>Twitter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="239"/>
+        <location filename="../assets/Sheet_Settings.qml" line="244"/>
         <source>Taobao</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="249"/>
+        <location filename="../assets/Sheet_Settings.qml" line="254"/>
         <source>Selected Search Engine:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="252"/>
+        <location filename="../assets/Sheet_Settings.qml" line="260"/>
         <source>User Agent</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="257"/>
+        <location filename="../assets/Sheet_Settings.qml" line="265"/>
         <source>User-Agent(UA) is used by web sites to identify the type of device you&apos;re using, please use NEXUS for better compatibility.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="265"/>
+        <location filename="../assets/Sheet_Settings.qml" line="273"/>
         <source>NEXUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="269"/>
+        <location filename="../assets/Sheet_Settings.qml" line="277"/>
         <source>iPhone 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="273"/>
+        <location filename="../assets/Sheet_Settings.qml" line="281"/>
         <source>Opera Desktop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="283"/>
+        <location filename="../assets/Sheet_Settings.qml" line="291"/>
         <source>Selected UA:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="368"/>
-        <source>GENERAL SETTINGS</source>
+        <location filename="../assets/Sheet_Settings.qml" line="295"/>
+        <source>Download Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="376"/>
-        <source>Startup</source>
+        <location filename="../assets/Sheet_Settings.qml" line="302"/>
+        <source>File type to monitor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="315"/>
+        <source>Example: zip;txt;apk...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="330"/>
+        <source>Download files to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="343"/>
+        <source>Choose a path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="359"/>
+        <source>Choose a path for download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../assets/Sheet_Settings.qml" line="381"/>
+        <source>GENERAL SETTINGS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="389"/>
+        <source>Startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="394"/>
         <source>When app starts, show:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="387"/>
+        <location filename="../assets/Sheet_Settings.qml" line="400"/>
         <source>Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="393"/>
+        <location filename="../assets/Sheet_Settings.qml" line="406"/>
         <source>Blankpage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="424"/>
+        <source>Cache Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="429"/>
+        <source>When app exits :</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="454"/>
+        <source>Clear Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="460"/>
+        <location filename="../assets/Sheet_Settings.qml" line="492"/>
+        <location filename="../assets/Sheet_Settings.qml" line="525"/>
+        <source>Clear Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="466"/>
+        <source>Cache Cleared</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="486"/>
+        <source>Clear Histories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="519"/>
+        <source>Clear Saved Passwords</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="543"/>
+        <source>Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="548"/>
+        <source>In case you want a fresh install, here&apos;s a red button :</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="553"/>
+        <source>RESET</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="562"/>
+        <source>App Reseted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="567"/>
+        <source>*This will remove all your configurations includes: bookmarks, app cache, web histories, saved passwords, etc.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -553,37 +645,37 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="27"/>
+        <location filename="../assets/main.qml" line="43"/>
         <source>Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="36"/>
+        <location filename="../assets/main.qml" line="52"/>
         <source>History</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="45"/>
+        <location filename="../assets/main.qml" line="61"/>
         <source>New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="52"/>
+        <location filename="../assets/main.qml" line="68"/>
         <source>&quot;%1&quot; Closed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="80"/>
+        <location filename="../assets/main.qml" line="96"/>
         <source>Undo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="111"/>
+        <location filename="../assets/main.qml" line="130"/>
         <source>Review</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="118"/>
+        <location filename="../assets/main.qml" line="137"/>
         <source>Feedback</source>
         <translation type="unfinished"></translation>
     </message>

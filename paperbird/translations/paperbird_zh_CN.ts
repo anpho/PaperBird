@@ -4,20 +4,20 @@
 <context>
     <name>ApplicationUI</name>
     <message>
-        <location filename="../src/applicationui.cpp" line="141"/>
-        <location filename="../src/applicationui.cpp" line="156"/>
+        <location filename="../src/applicationui.cpp" line="144"/>
+        <location filename="../src/applicationui.cpp" line="159"/>
         <source>Create table error: %1</source>
         <translation>创建数据库表错误： %1</translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="230"/>
-        <location filename="../src/applicationui.cpp" line="316"/>
-        <location filename="../src/applicationui.cpp" line="338"/>
+        <location filename="../src/applicationui.cpp" line="233"/>
+        <location filename="../src/applicationui.cpp" line="319"/>
+        <location filename="../src/applicationui.cpp" line="341"/>
         <source>Delete table error: %1</source>
         <translation>删除数据库表错误： %1</translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="386"/>
+        <location filename="../src/applicationui.cpp" line="389"/>
         <source>Delete bookmark error: %1</source>
         <translation>删除书签错误： %1</translation>
     </message>
@@ -101,94 +101,98 @@
 <context>
     <name>Sheet_Settings</name>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="35"/>
+        <location filename="../assets/Sheet_Settings.qml" line="38"/>
         <source>SETTINGS</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="37"/>
+        <location filename="../assets/Sheet_Settings.qml" line="40"/>
         <source>CLOSE</source>
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="46"/>
+        <location filename="../assets/Sheet_Settings.qml" line="49"/>
         <source>UI SETTINGS</source>
         <translation>界面设置</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="54"/>
+        <location filename="../assets/Sheet_Settings.qml" line="57"/>
         <source>Visual Theme</source>
         <translation>外观主题</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="60"/>
+        <location filename="../assets/Sheet_Settings.qml" line="63"/>
         <source>Choose your theme below, Dark theme is better for OLED devices.</source>
         <translation>这里可以自定义主题， 暗调主题对OLED屏幕的设备来说相对较省电。</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="70"/>
+        <location filename="../assets/Sheet_Settings.qml" line="73"/>
         <source>App Theme:</source>
         <translation>应用主题：</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="80"/>
+        <location filename="../assets/Sheet_Settings.qml" line="83"/>
         <source>BRIGHT</source>
         <translation>明亮</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="87"/>
+        <location filename="../assets/Sheet_Settings.qml" line="90"/>
         <source>DARK</source>
         <translation>夜晚</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="111"/>
+        <location filename="../assets/Sheet_Settings.qml" line="114"/>
         <source>Theme Color:</source>
         <translation>主题颜色：</translation>
     </message>
     <message>
+        <location filename="../assets/Sheet_Settings.qml" line="295"/>
         <source>Download Manager</source>
-        <translation type="obsolete">下载管理器</translation>
+        <translation>下载管理器</translation>
     </message>
     <message>
+        <location filename="../assets/Sheet_Settings.qml" line="302"/>
         <source>File type to monitor:</source>
-        <translation type="obsolete">要监视的文件类型：</translation>
+        <translation>要监视的文件类型：</translation>
     </message>
     <message>
         <source>Example: zip;txt;apk</source>
         <translation type="obsolete">例如： zip;txt;apk</translation>
     </message>
     <message>
+        <location filename="../assets/Sheet_Settings.qml" line="343"/>
         <source>Choose a path</source>
-        <translation type="obsolete">选择默认保存路径</translation>
+        <translation>选择默认保存路径</translation>
     </message>
     <message>
+        <location filename="../assets/Sheet_Settings.qml" line="359"/>
         <source>Choose a path for download</source>
-        <translation type="obsolete">选择默认保存路径</translation>
+        <translation>选择默认保存路径</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="154"/>
+        <location filename="../assets/Sheet_Settings.qml" line="157"/>
         <source>BROWSER SETTINGS</source>
         <translation>浏览器设置</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="162"/>
-        <location filename="../assets/Sheet_Settings.qml" line="390"/>
+        <location filename="../assets/Sheet_Settings.qml" line="165"/>
+        <location filename="../assets/Sheet_Settings.qml" line="403"/>
         <source>Homepage</source>
         <translation>主页</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="168"/>
+        <location filename="../assets/Sheet_Settings.qml" line="171"/>
         <source>You can set the homepage URL here, or through other places&apos; context menu.</source>
         <translation>可在这里设置浏览器的主页，也可以在浏览网页或者书签、历史记录的右键菜单中设置。</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="179"/>
+        <location filename="../assets/Sheet_Settings.qml" line="182"/>
         <source>Set homepage URL here</source>
         <translation>主页地址</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="187"/>
-        <location filename="../assets/Sheet_Settings.qml" line="198"/>
+        <location filename="../assets/Sheet_Settings.qml" line="190"/>
+        <location filename="../assets/Sheet_Settings.qml" line="201"/>
         <source>Homepage Set</source>
         <translation>主页已设置</translation>
     </message>
@@ -197,108 +201,176 @@
         <translation type="obsolete">确定</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="206"/>
+        <location filename="../assets/Sheet_Settings.qml" line="211"/>
         <source>Search Engine</source>
         <translation>搜索引擎</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="211"/>
+        <location filename="../assets/Sheet_Settings.qml" line="216"/>
         <source>When you type something in address bar and hit GO, the selected search engine is used to search for it.</source>
         <translation>当你在地址栏中输入文本并提交时，将使用选择的搜索引擎进行搜索。</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="219"/>
+        <location filename="../assets/Sheet_Settings.qml" line="224"/>
         <source>Bing</source>
         <translation>必应</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="223"/>
+        <location filename="../assets/Sheet_Settings.qml" line="228"/>
         <source>Google</source>
         <translation>Google</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="227"/>
+        <location filename="../assets/Sheet_Settings.qml" line="232"/>
         <source>Baidu</source>
         <translation>百度</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="231"/>
+        <location filename="../assets/Sheet_Settings.qml" line="236"/>
         <source>Yahoo</source>
         <translation>雅虎</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="235"/>
+        <location filename="../assets/Sheet_Settings.qml" line="240"/>
         <source>Twitter</source>
         <translation>Twitter</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="239"/>
+        <location filename="../assets/Sheet_Settings.qml" line="244"/>
         <source>Taobao</source>
         <translation>淘宝</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="249"/>
+        <location filename="../assets/Sheet_Settings.qml" line="254"/>
         <source>Selected Search Engine:</source>
         <translation>使用中的搜索引擎：</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="252"/>
+        <location filename="../assets/Sheet_Settings.qml" line="260"/>
         <source>User Agent</source>
         <translation>用户代理</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="257"/>
+        <location filename="../assets/Sheet_Settings.qml" line="265"/>
         <source>User-Agent(UA) is used by web sites to identify the type of device you&apos;re using, please use NEXUS for better compatibility.</source>
         <translation>用户代理（UA）是网站用来区分不同的设备和浏览器的字符串，使用NEXUS可以提供更好的兼容性。</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="265"/>
+        <location filename="../assets/Sheet_Settings.qml" line="273"/>
         <source>NEXUS</source>
         <translation>NEXUS</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="269"/>
+        <location filename="../assets/Sheet_Settings.qml" line="277"/>
         <source>iPhone 4</source>
         <translation>iPhone 4</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="273"/>
+        <location filename="../assets/Sheet_Settings.qml" line="281"/>
         <source>Opera Desktop</source>
         <translation>Opera 桌面版</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="283"/>
+        <location filename="../assets/Sheet_Settings.qml" line="291"/>
         <source>Selected UA:</source>
         <translation>使用中的UA：</translation>
     </message>
     <message>
-        <source>Download files to:</source>
-        <translation type="obsolete">将文件下载到：</translation>
+        <location filename="../assets/Sheet_Settings.qml" line="315"/>
+        <source>Example: zip;txt;apk...</source>
+        <translation>例如: zip;txt;apk...</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="368"/>
+        <location filename="../assets/Sheet_Settings.qml" line="330"/>
+        <source>Download files to:</source>
+        <translation>将文件下载到：</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="381"/>
         <source>GENERAL SETTINGS</source>
         <translation>通用设置</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="376"/>
+        <location filename="../assets/Sheet_Settings.qml" line="389"/>
         <source>Startup</source>
         <translation>应用启动</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="381"/>
+        <location filename="../assets/Sheet_Settings.qml" line="394"/>
         <source>When app starts, show:</source>
         <translation>当app启动时，打开：</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="387"/>
+        <location filename="../assets/Sheet_Settings.qml" line="400"/>
         <source>Bookmark</source>
         <translation>书签</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="393"/>
+        <location filename="../assets/Sheet_Settings.qml" line="406"/>
         <source>Blankpage</source>
         <translation>空白页</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="424"/>
+        <source>Cache Management</source>
+        <translation>缓存管理</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="429"/>
+        <source>When app exits :</source>
+        <translation>当应用退出时：</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="454"/>
+        <source>Clear Cache</source>
+        <translation>自动清空缓存</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="460"/>
+        <location filename="../assets/Sheet_Settings.qml" line="492"/>
+        <location filename="../assets/Sheet_Settings.qml" line="525"/>
+        <source>Clear Now</source>
+        <translation>现在清空</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="466"/>
+        <source>Cache Cleared</source>
+        <translation>缓存已清除</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="486"/>
+        <source>Clear Histories</source>
+        <translation>自动清除历史记录</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="519"/>
+        <source>Clear Saved Passwords</source>
+        <translation>自动清除保存的密码</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="543"/>
+        <source>Configurations</source>
+        <translation>配置文件</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="548"/>
+        <source>In case you want a fresh install, here&apos;s a red button :</source>
+        <translation>如果你需要清空本应用的全部设置，可以点击下面的红色按钮：</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="553"/>
+        <source>RESET</source>
+        <translation>恢复初始状态</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="562"/>
+        <source>App Reseted</source>
+        <translation>应用设置已重置</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="567"/>
+        <source>*This will remove all your configurations includes: bookmarks, app cache, web histories, saved passwords, etc.</source>
+        <translation>*这将删除本应用的全部配置文件，包括：书签、应用缓存、历史记录、保存的密码等等。</translation>
     </message>
     <message>
         <source>Bing.com</source>
@@ -625,27 +697,27 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="27"/>
+        <location filename="../assets/main.qml" line="43"/>
         <source>Bookmark</source>
         <translation>书签</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="36"/>
+        <location filename="../assets/main.qml" line="52"/>
         <source>History</source>
         <translation>历史记录</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="45"/>
+        <location filename="../assets/main.qml" line="61"/>
         <source>New Window</source>
         <translation>新建窗口</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="52"/>
+        <location filename="../assets/main.qml" line="68"/>
         <source>&quot;%1&quot; Closed</source>
         <translation>“%1” 已关闭</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="80"/>
+        <location filename="../assets/main.qml" line="96"/>
         <source>Undo</source>
         <translation>撤销</translation>
     </message>
@@ -654,12 +726,12 @@
         <translation type="obsolete">%1 已关闭</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="111"/>
+        <location filename="../assets/main.qml" line="130"/>
         <source>Review</source>
         <translation>评分</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="118"/>
+        <location filename="../assets/main.qml" line="137"/>
         <source>Feedback</source>
         <translation>反馈</translation>
     </message>

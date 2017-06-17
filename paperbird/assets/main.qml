@@ -8,6 +8,7 @@ TabbedPane {
     }
     onCreationCompleted: {
         _app.open_a_new_tab_for_me.connect(open_new_tab);
+        Application.aboutToQuit.connect(app_exit_slot);
         var startupmode = parseInt(_app.getv("startup", "2"));
         switch (startupmode) {
             case 0:
@@ -22,6 +23,21 @@ TabbedPane {
                 break;
         }
     }
+    function app_exit_slot() {
+        var _clear_cache = _app.getv("clearcache", "false") === "true";
+        if (_clear_cache) {
+            // clear cache
+            useless_webview.storage.clearCache()
+            console.log("cache cleared.");
+        }
+        var _clear_history = _app.getv("clearhistory", "false") === "true";
+        if (_clear_history) {
+            // clear history
+            _app.clearHistories();
+            console.log("history cleared.")
+        }
+    }
+
     Tab_Bookmark {
         id: tab_bookmark
         title: qsTr("Bookmark")
@@ -84,6 +100,9 @@ TabbedPane {
                     open_new_tab(current_url)
                 }
             }
+        },
+        WebView {
+            id: useless_webview
         }
     ]
     showTabsOnActionBar: false

@@ -78,7 +78,7 @@ Page {
                 scrollRole: ScrollRole.Main
                 WebView {
                     id: webv
-
+                    url: "local:///assets/blank"
                     horizontalAlignment: HorizontalAlignment.Fill
                     verticalAlignment: VerticalAlignment.Fill
                     preferredHeight: Infinity
@@ -196,7 +196,7 @@ Page {
                 id: address_text_input
                 verticalAlignment: VerticalAlignment.Center
                 horizontalAlignment: HorizontalAlignment.Fill
-                text: webv.url
+                text: webv.url.indexOf("local:///assets")>0?"":webv.url
                 hintText: qsTr("Type URL here")
                 textFormat: TextFormat.Plain
                 inputMode: TextFieldInputMode.Url
@@ -254,8 +254,8 @@ Page {
                     scaleY: 0.8
                     verticalAlignment: VerticalAlignment.Center
                     filterColor: Color.White
-                    preferredWidth: ui.du(10.0)
-                    preferredHeight: ui.du(10.0)
+                    preferredWidth: ui.du(6.0)
+                    preferredHeight: ui.du(6.0)
                 }
                 gestureHandlers: TapHandler {
                     onTapped: {

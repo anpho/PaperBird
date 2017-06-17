@@ -50,7 +50,7 @@ Tab {
                 adm.load();
             }
             id: pageroot
-            actionBarVisibility: ChromeVisibility.Hidden
+//            actionBarVisibility: ChromeVisibility.Hidden
             ListView {
                 id: hlistview
                 dataModel: AsyncDataModel {

@@ -35,7 +35,7 @@ Tab {
                 }
             }
             id: pageroot
-            actionBarVisibility: ChromeVisibility.Hidden
+//            actionBarVisibility: ChromeVisibility.Hidden
             attachedObjects: [
                 SystemToast {
                     id: sst
