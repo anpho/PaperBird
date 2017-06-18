@@ -42,7 +42,8 @@ Page {
                     lasty = event.localY
                 } else if (event.isUp()) {
                     var cury = event.localY
-                    if (cury - lasty > 20) {
+                    console.log(cury - lasty)
+                    if (cury - lasty > 300) {
                         swipedown()
                     } else if (cury - lasty < -20) {
                         swipeup()
@@ -80,6 +81,9 @@ Page {
                     id: webv
                     url: "local:///assets/blank"
                     horizontalAlignment: HorizontalAlignment.Fill
+                    onUrlChanged: {
+
+                    }
                     verticalAlignment: VerticalAlignment.Fill
                     preferredHeight: Infinity
                     onMinContentScaleChanged: {
@@ -145,13 +149,25 @@ Page {
                 verticalAlignment: VerticalAlignment.Top
                 horizontalAlignment: HorizontalAlignment.Fill
                 background: Color.Black
+                layout: DockLayout {
+
+                }
                 Label {
                     text: webv.loading ? webv.url : webv.title
                     textStyle.fontSize: FontSize.XXSmall
                     textStyle.color: Color.White
+                    horizontalAlignment: HorizontalAlignment.Fill
+                }
+                ProgressIndicator {
+                    value: webv.loadProgress
+                    toValue: 100.0
+                    horizontalAlignment: HorizontalAlignment.Fill
+                    preferredHeight: 1.0
+                    visible: value < 99
+                    verticalAlignment: VerticalAlignment.Bottom
+                    opacity: 0.7
                 }
                 onTouch: {
-                    //                    bottomlabel.visible = true;
                     showbottomlabel.play()
                     address_text_input.requestFocus()
                 }
@@ -196,8 +212,8 @@ Page {
                 id: address_text_input
                 verticalAlignment: VerticalAlignment.Center
                 horizontalAlignment: HorizontalAlignment.Fill
-                text: webv.url.indexOf("local:///assets")>0?"":webv.url
                 hintText: qsTr("Type URL here")
+                text: webv.url.toString().toLowerCase().indexOf("local:///assets") > -1 ? "" : webv.url
                 textFormat: TextFormat.Plain
                 inputMode: TextFieldInputMode.Url
                 autoFit: TextAutoFit.None
@@ -211,13 +227,14 @@ Page {
                 }
                 input.onSubmitted: {
                     if (text.length > 0) uri = text;
-                    //                    bottomlabel.visible = false
                     hidebottomlabel.play()
                 }
                 textStyle.color: Color.White
                 onFocusedChanged: {
                     if (focused) {
                         editor.setSelection(0, text.length);
+                    }else {
+                        hidebottomlabelwithDealy.play()
                     }
                 }
             }
@@ -265,26 +282,26 @@ Page {
             }
 
         }
-        Container {
-            visible: webv.loading
-            horizontalAlignment: HorizontalAlignment.Center
-            verticalAlignment: VerticalAlignment.Top
-            layout: StackLayout {
-                orientation: LayoutOrientation.LeftToRight
-            }
-            background: Color.create("#77000000")
-            leftPadding: 40.0
-            rightPadding: 40.0
-            topPadding: 10.0
-            bottomPadding: 10.0
-            ActivityIndicator {
-                running: true
-            }
-            Label {
-                text: qsTr("Loading...")
-                textStyle.color: Color.White
-            }
-        }
+//        Container {
+//            visible: webv.loading
+//            horizontalAlignment: HorizontalAlignment.Center
+//            verticalAlignment: VerticalAlignment.Top
+//            layout: StackLayout {
+//                orientation: LayoutOrientation.LeftToRight
+//            }
+//            background: Color.create("#77000000")
+//            leftPadding: 40.0
+//            rightPadding: 40.0
+//            topPadding: 10.0
+//            bottomPadding: 10.0
+//            ActivityIndicator {
+//                running: true
+//            }
+//            Label {
+//                text: qsTr("Loading...")
+//                textStyle.color: Color.White
+//            }
+//        }
     }
     actions: [
         DeleteActionItem {
@@ -400,7 +417,7 @@ Page {
             }
             shortcuts: [
                 Shortcut {
-                    key: "H"
+                    key: "Alt+H"
                 }
             ]
         },
@@ -447,6 +464,9 @@ Page {
             shortcuts: [
                 Shortcut {
                     key: "$"
+                },
+                Shortcut {
+                    key: "Alt+s"
                 }
             ]
         },
@@ -519,14 +539,27 @@ Page {
             }
         },
         TranslateTransition {
+            id: hidebottomlabelwithDealy
+            target: bottomlabel
+            toY: 300
+            onStarted: {
+                hidetoplabel.play()
+            }
+            delay: 2000
+        },
+        TranslateTransition {
             id: showbottomlabel
             target: bottomlabel
             toY: 0
             onStarted: {
                 showtoplabel.play()
             }
+            onEnded: {
+                
+            }
         },
         ParallelAnimation {
+            // 隐藏右上角关闭按钮
             id: hidetoplabel
             target: top_close
             animations: [
@@ -539,6 +572,21 @@ Page {
             ]
         },
         ParallelAnimation {
+            // 在1秒后隐藏右上角的关闭按钮
+            id: hidetoplabelwithDelay
+            target: top_close
+            animations: [
+                TranslateTransition {
+                    toX: 150
+                },
+                RotateTransition {
+                    toAngleZ: 180
+                }
+            ]
+            delay: 1000
+        },
+        ParallelAnimation {
+            // 显示右上角的关闭按钮，并在1秒后隐藏
             id: showtoplabel
             target: top_close
             animations: [
@@ -549,6 +597,9 @@ Page {
                     toAngleZ: 0
                 }
             ]
+            onEnded: {
+                hidetoplabelwithDelay.play()
+            }
         },
 
         SystemDialog {

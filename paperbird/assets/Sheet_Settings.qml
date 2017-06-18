@@ -280,6 +280,18 @@ Sheet {
                             Option {
                                 text: qsTr("Opera Desktop")
                                 value: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.52 Safari/537.36 OPR/15.0.1147.100"
+                            },
+                            Option {
+                                text: qsTr("Opera 12 Mobile")
+                                value: "Opera/12.02 (Android 4.1; Linux; Opera Mobi/ADR-1111101157; U; en-US) Presto/2.9.201 Version/12.02"
+                            },
+                            Option {
+                                text: qsTr("BlackBerry 9900")
+                                value: "Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.346 Mobile Safari/534.11+"
+                            },
+                            Option {
+                                text: qsTr("BlackBerry 10")
+                                value: "Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.1.0.4633 Mobile Safari/537.10+"
                             }
                         ]
                         onSelectedIndexChanged: {
