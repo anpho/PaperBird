@@ -58,6 +58,7 @@ Page {
                 //hide address bar
                 hidebottomlabel.play()
             }
+            
             ScrollView {
                 id: sv
                 verticalAlignment: VerticalAlignment.Fill
@@ -116,6 +117,21 @@ Page {
                                 var current = webadm.data(indexPath);
                                 console.log(current.title + current.url)
                                 _app.updateHistoryByURI(current.title, current.url);
+                            }
+                        }
+                    ]
+                    gestureHandlers: [
+                        DoubleTapHandler {
+                            onDoubleTapped: {
+                                if (webv.settings.userStyleSheetLocation != ""){
+                                    webv.settings.userStyleSheetLocation = "";
+                                    sstt.body = qsTr("Text Selection Enabled");
+                                    sstt.show();
+                                }else{
+                                    webv.settings.userStyleSheetLocation = "asset:///disable_selection.css";
+                                    sstt.body = qsTr("Text Selection Disabled");
+                                    sstt.show();
+                                }
                             }
                         }
                     ]
