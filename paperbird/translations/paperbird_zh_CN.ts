@@ -552,7 +552,7 @@
 <context>
     <name>WebPage</name>
     <message>
-        <location filename="../assets/WebPage.qml" line="231"/>
+        <location filename="../assets/WebPage.qml" line="232"/>
         <source>Type URL here</source>
         <translation>在此输入网址或搜索文本</translation>
     </message>
@@ -561,22 +561,22 @@
         <translation type="obsolete">加载中...</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="324"/>
+        <location filename="../assets/WebPage.qml" line="325"/>
         <source>Close</source>
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="623"/>
+        <location filename="../assets/WebPage.qml" line="637"/>
         <source>Confirm</source>
         <translation>确认</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="624"/>
+        <location filename="../assets/WebPage.qml" line="638"/>
         <source>Do you want to close current Tab?</source>
         <translation>是否关闭当前页面？</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="337"/>
+        <location filename="../assets/WebPage.qml" line="338"/>
         <source>Go Back</source>
         <translation>后退</translation>
     </message>
@@ -585,112 +585,122 @@
         <translation type="obsolete">关闭</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="348"/>
+        <location filename="../assets/WebPage.qml" line="349"/>
         <source>Go Forward</source>
         <translation>前进</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="359"/>
+        <location filename="../assets/WebPage.qml" line="360"/>
         <source>Lock Oriention</source>
         <translation>屏幕方向</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="371"/>
+        <location filename="../assets/WebPage.qml" line="372"/>
         <source>Lock Landscape</source>
         <translation>锁定横屏</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="372"/>
+        <location filename="../assets/WebPage.qml" line="373"/>
         <source>Lock Portrait</source>
         <translation>锁定竖屏</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="373"/>
+        <location filename="../assets/WebPage.qml" line="374"/>
         <source>Not Locked</source>
         <translation>跟随系统</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="383"/>
+        <location filename="../assets/WebPage.qml" line="384"/>
         <source>Rotation Lock</source>
         <translation>旋转锁定</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="384"/>
+        <location filename="../assets/WebPage.qml" line="385"/>
         <source>If you want to lock the screen rotation, check it here. All settings will be reseted when app exits.</source>
         <translation>如果你需要锁定屏幕旋转，可在此进行设置。该选项在下次应用启动时失效。</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="407"/>
+        <location filename="../assets/WebPage.qml" line="408"/>
         <source>Add Bookmark</source>
         <translation>添加书签</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="412"/>
+        <location filename="../assets/WebPage.qml" line="413"/>
         <source>Bookmark Created</source>
         <translation>成功添加书签</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="415"/>
+        <location filename="../assets/WebPage.qml" line="416"/>
         <source>Bookmark Creation Failed</source>
         <translation>书签创建失败</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="426"/>
+        <location filename="../assets/WebPage.qml" line="427"/>
         <source>Set Homepage</source>
         <translation>设置为主页</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="431"/>
+        <location filename="../assets/WebPage.qml" line="432"/>
         <source>Homepage Set</source>
         <translation>主页已设置</translation>
     </message>
     <message>
+        <location filename="../assets/WebPage.qml" line="442"/>
+        <source>Pin to Homescreen</source>
+        <translation>在桌面创建快捷方式</translation>
+    </message>
+    <message>
         <location filename="../assets/WebPage.qml" line="447"/>
+        <source>Shortcut Created</source>
+        <translation>快捷方式已创建</translation>
+    </message>
+    <message>
+        <location filename="../assets/WebPage.qml" line="458"/>
         <source>Disable Images</source>
         <translation>禁止下载图片</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="447"/>
+        <location filename="../assets/WebPage.qml" line="458"/>
         <source>Enable Images</source>
         <translation>显示图片</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="497"/>
+        <location filename="../assets/WebPage.qml" line="508"/>
         <source>URL</source>
         <translation>地址栏</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="516"/>
+        <location filename="../assets/WebPage.qml" line="527"/>
         <source>Show Bookmarks</source>
         <translation>显示书签</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="527"/>
+        <location filename="../assets/WebPage.qml" line="538"/>
         <source>Show Histories</source>
         <translation>显示历史记录</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="538"/>
+        <location filename="../assets/WebPage.qml" line="549"/>
         <source>Next Tab</source>
         <translation>显示下个标签页</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="451"/>
+        <location filename="../assets/WebPage.qml" line="462"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="128"/>
+        <location filename="../assets/WebPage.qml" line="129"/>
         <source>Text Selection Enabled</source>
         <translation>文本选择已启用</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="132"/>
+        <location filename="../assets/WebPage.qml" line="133"/>
         <source>Text Selection Disabled</source>
         <translation>文本选择已禁用</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="463"/>
+        <location filename="../assets/WebPage.qml" line="474"/>
         <source>Reload</source>
         <translation>重新载入</translation>
     </message>
@@ -703,17 +713,17 @@
         <translation type="obsolete">主页已设置</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="473"/>
+        <location filename="../assets/WebPage.qml" line="484"/>
         <source>Share URL</source>
         <translation>分享链接</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="476"/>
+        <location filename="../assets/WebPage.qml" line="487"/>
         <source>Check this out: </source>
         <translation>分享个网页给你： </translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="490"/>
+        <location filename="../assets/WebPage.qml" line="501"/>
         <source>Open with ... </source>
         <translation>打开方式...</translation>
     </message>

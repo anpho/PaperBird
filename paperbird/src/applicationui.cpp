@@ -430,11 +430,14 @@ bool ApplicationUI::updateBookmarkByID(const QString &bid, const QString &title,
 
 void ApplicationUI::onInvoke(const bb::system::InvokeRequest& invoke)
 {
-	// this is the receiver when app is invoked via other apps, 
+	// this is the receiver when app is invoked via other apps,
 	// for example, when in system browser and select "open with / paperbird"
-	
+
     QString target_url = invoke.uri().toString();
     if (target_url.length() > 0) {
+        if (target_url.startsWith("anpho:")){
+            target_url.remove(0,6);
+        }
         qDebug()<<"using target url : "<< target_url;
         emit open_a_new_tab_for_me(target_url);
     } else {

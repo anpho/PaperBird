@@ -1,6 +1,7 @@
 import bb.cascades 1.4
 import bb.system 1.2
 import cn.anpho 1.0
+import bb.platform 1.3
 Page {
     signal request_new_window_(string targeturl); //open a new window
     signal request_close_(); //request to close this tab
@@ -438,6 +439,16 @@ Page {
             ]
         },
         ActionItem {
+            title: qsTr("Pin to Homescreen")
+            imageSource: "asset:///icon/ic_homex.png"            
+            ActionBar.placement: ActionBarPlacement.InOverflow
+            onTriggered: {
+                homescreenobj.addShortcut("asset:///icon/ca_browser_blue.png", webv.title, "anpho:"+webv.url);
+                sstt.body=qsTr("Shortcut Created");
+                sstt.show();
+            }
+        },
+        ActionItem {
             imageSource: showImages ? "asset:///icon/ic_cancel.png" : "asset:///icon/ic_view_image.png"
             ActionBar.placement: ActionBarPlacement.InOverflow
             onTriggered: {
@@ -541,6 +552,9 @@ Page {
     attachedObjects: [
         WebView {
             id: invisible_webview
+        },
+        HomeScreen {
+          id: homescreenobj  
         },
         SystemToast {
             id: sstt

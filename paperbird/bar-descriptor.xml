@@ -55,11 +55,10 @@
     <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
          Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
          An updated version of application must have a versionNumber value higher than the previous version. Required. -->
-    <versionNumber>2.0.17</versionNumber>
+    <versionNumber>2.0.18</versionNumber>
 
     <!-- Fourth digit segment of the package version. First three segments are taken from the
          <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
-    <buildId>617</buildId>
     <packageLocale>zh-CN</packageLocale>
 
     <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
@@ -77,10 +76,11 @@
 
     <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
     <icon>
-       <image>icon3.png</image>
+       <image>icon4.png</image>
     </icon>
     <authorId>gYAAgMy-I-SFJtVvioZxVXYQjhA</authorId>
     <author>anpho</author>
+    <buildId>1105</buildId>
 
     <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
     <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
@@ -104,6 +104,7 @@
     </asset>
     <asset path="icon2.png">icon2.png</asset>
     <asset path="icon3.png">icon3.png</asset>
+    <asset path="icon4.png">icon4.png</asset>
 
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>
@@ -122,11 +123,19 @@
         </icon>
         <filter>
             <action>bb.action.OPEN</action>
+            <action>bb.action.VIEW</action>
             <mime-type>*</mime-type>
             <property var="uris" value="http:,https:,ftp:,rtsp:,websearch:"/>
         </filter>
         <filter>
             <action>bb.action.OPEN</action>
+            <action>bb.action.VIEW</action>
+            <mime-type>*</mime-type>
+            <property var="uris" value="anpho:"/>
+        </filter>
+        <filter>
+            <action>bb.action.OPEN</action>
+            <action>bb.action.VIEW</action>
             <mime-type>text/html</mime-type>
             <mime-type>application/xhtml+xml</mime-type>
             <mime-type>image/svg+xml</mime-type>
