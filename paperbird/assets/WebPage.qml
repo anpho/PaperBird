@@ -443,9 +443,10 @@ Page {
             imageSource: "asset:///icon/ic_homex.png"            
             ActionBar.placement: ActionBarPlacement.InOverflow
             onTriggered: {
-                homescreenobj.addShortcut("asset:///icon/ca_browser_blue.png", webv.title, "anpho:"+webv.url);
-                sstt.body=qsTr("Shortcut Created");
-                sstt.show();
+                var absheet = Qt.createComponent("Pin2Home.qml").createObject(pageroot);
+                absheet.title = webv.title;
+                absheet.url = webv.url;
+                absheet.open();
             }
         },
         ActionItem {
@@ -552,9 +553,6 @@ Page {
     attachedObjects: [
         WebView {
             id: invisible_webview
-        },
-        HomeScreen {
-          id: homescreenobj  
         },
         SystemToast {
             id: sstt

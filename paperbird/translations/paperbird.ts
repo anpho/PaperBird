@@ -66,6 +66,64 @@
     </message>
 </context>
 <context>
+    <name>Pin2Home</name>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="45"/>
+        <source>Pin to HomeScreen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="47"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="66"/>
+        <source>Icon:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="81"/>
+        <source>Title:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="85"/>
+        <source>Shortcut Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="105"/>
+        <source>Shouldn&apos;t be Empty or with \ .</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="111"/>
+        <source>URL:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="116"/>
+        <source>Web page URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="136"/>
+        <source>Should be start with http:// or https://</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="145"/>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="150"/>
+        <source>Shortcut Created</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Sheet_About</name>
     <message>
         <location filename="../assets/Sheet_About.qml" line="8"/>
@@ -522,12 +580,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="637"/>
+        <location filename="../assets/WebPage.qml" line="635"/>
         <source>Confirm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="638"/>
+        <location filename="../assets/WebPage.qml" line="636"/>
         <source>Do you want to close current Tab?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -612,62 +670,57 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="447"/>
-        <source>Shortcut Created</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../assets/WebPage.qml" line="458"/>
+        <location filename="../assets/WebPage.qml" line="459"/>
         <source>Disable Images</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="458"/>
+        <location filename="../assets/WebPage.qml" line="459"/>
         <source>Enable Images</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="508"/>
+        <location filename="../assets/WebPage.qml" line="509"/>
         <source>URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="527"/>
+        <location filename="../assets/WebPage.qml" line="528"/>
         <source>Show Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="538"/>
+        <location filename="../assets/WebPage.qml" line="539"/>
         <source>Show Histories</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="549"/>
+        <location filename="../assets/WebPage.qml" line="550"/>
         <source>Next Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="462"/>
+        <location filename="../assets/WebPage.qml" line="463"/>
         <source>Stop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="474"/>
+        <location filename="../assets/WebPage.qml" line="475"/>
         <source>Reload</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="484"/>
+        <location filename="../assets/WebPage.qml" line="485"/>
         <source>Share URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="487"/>
+        <location filename="../assets/WebPage.qml" line="488"/>
         <source>Check this out: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="501"/>
+        <location filename="../assets/WebPage.qml" line="502"/>
         <source>Open with ... </source>
         <translation type="unfinished"></translation>
     </message>

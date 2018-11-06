@@ -11,5 +11,6 @@
 	<file>assets/Tab_PageTemplate.qml</file>
 	<file>assets/WebPage.qml</file>
 	<file>assets/BookmarkEditDialog.qml</file>
+	<file>assets/Pin2Home.qml</file>
 </qresource>
 </RCC>
