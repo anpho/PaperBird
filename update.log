@@ -1,37 +1,63 @@
+2018.11.5
+增加 在桌面创建快捷方式 功能
++ Pin to HomeScreen
+
 2018.8.16
-根据反馈，增加双击选择文本、双击禁用文本选择功能
-好久不见
+增加双击选择文本、双击禁用文本选择功能
++ Double Tap to enable text selection
 
 2017.6.17
-根据反馈，增加缓存清理功能
+增加缓存清理功能
++ Cache Clean
 增加退出时自动清除缓存和历史记录的功能
++ Auto clean cache & history when exit
 增加APP RESET功能
++ App Reset
 调整部分UI
+* UI
 
 2016.5.17
 优化页面打开速度
+* Shorter loading time
 增加了不少快捷键，详见右侧菜单，如$为分享当前页之类
++ Keyboard shortcuts ( see right menu )
 增加了右上角的关闭按钮
++ Close button on top right
 又换了个图标
+* Icon
 
 2016.5.8
 书签功能的数据库CRUD操作
++ Bookmark database operation
 书签功能的UI部分逻辑
++ Bookmark UI
 目前为止所有英文字串的汉化工作
++ English translation
 重做splash画面
+* Splash Screen
 第一个发布到Beta Zone的软件版本
+* 1st Beta Zone Release
 
 2016.5.7
 数据库创建
++ Database
 历史记录功能的数据库CRD操作
++ History database operation
 历史记录功能的UI部分逻辑
++ History UI
 
 2016.4.30
 “关于”页面中的网页链接直接在本应用内打开
++ Open links in app
 应用程序主题切换，以及动态设置主题颜色
++ Theme support and customization
 目前所有英文字串的汉化工作
++ English translation
 简单做了几个splash
++ Splash Screen
 
 2016.4.29
 多标签浏览
++ Multitab Browsering
 标签的新建、关闭
++ Tab management
