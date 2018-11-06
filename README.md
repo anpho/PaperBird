@@ -9,3 +9,4 @@ blackberry10平台的纸莺浏览器，是一个模仿原生浏览器的项目�
 
 本repo内为完整项目代码，可直接在Momentics IDE中导入使用并编译。
 
+## [UPDATE LOG](https://github.com/anpho/PaperBird/blob/master/update.log)
