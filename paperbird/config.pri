@@ -39,6 +39,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/BookmarkEditDialog.qml) \
         $$quote($$BASEDIR/assets/CoreObject.qml) \
         $$quote($$BASEDIR/assets/Net.qml) \
+        $$quote($$BASEDIR/assets/Pin2Home.qml) \
         $$quote($$BASEDIR/assets/Sheet_About.qml) \
         $$quote($$BASEDIR/assets/Sheet_Settings.qml) \
         $$quote($$BASEDIR/assets/Tab_Bookmark.qml) \

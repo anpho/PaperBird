@@ -66,6 +66,64 @@
     </message>
 </context>
 <context>
+    <name>Pin2Home</name>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="45"/>
+        <source>Pin to HomeScreen</source>
+        <translation>在桌面创建快捷方式</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="47"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="66"/>
+        <source>Icon:</source>
+        <translation>图标：</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="81"/>
+        <source>Title:</source>
+        <translation>标题：</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="85"/>
+        <source>Shortcut Title</source>
+        <translation>快捷方式标题文本</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="105"/>
+        <source>Shouldn&apos;t be Empty or with \ .</source>
+        <translation>标题不能为空或包含\字符。</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="111"/>
+        <source>URL:</source>
+        <translation>URL：</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="116"/>
+        <source>Web page URL</source>
+        <translation>在此输入网址</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="136"/>
+        <source>Should be start with http:// or https://</source>
+        <translation>应为http://或https://开头</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="145"/>
+        <source>Done</source>
+        <translation>确定</translation>
+    </message>
+    <message>
+        <location filename="../assets/Pin2Home.qml" line="150"/>
+        <source>Shortcut Created</source>
+        <translation>快捷方式已创建</translation>
+    </message>
+</context>
+<context>
     <name>Sheet_About</name>
     <message>
         <location filename="../assets/Sheet_About.qml" line="8"/>
@@ -459,6 +517,10 @@
         <translation>设置为主页</translation>
     </message>
     <message>
+        <source>Pin to Homescreen</source>
+        <translation type="obsolete">在桌面创建快捷方式</translation>
+    </message>
+    <message>
         <location filename="../assets/Tab_Bookmark.qml" line="156"/>
         <source>None Selected.</source>
         <translation>未选择。</translation>
@@ -566,12 +628,12 @@
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="637"/>
+        <location filename="../assets/WebPage.qml" line="635"/>
         <source>Confirm</source>
         <translation>确认</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="638"/>
+        <location filename="../assets/WebPage.qml" line="636"/>
         <source>Do you want to close current Tab?</source>
         <translation>是否关闭当前页面？</translation>
     </message>
@@ -650,42 +712,41 @@
         <translation>在桌面创建快捷方式</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="447"/>
         <source>Shortcut Created</source>
-        <translation>快捷方式已创建</translation>
+        <translation type="obsolete">快捷方式已创建</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="458"/>
+        <location filename="../assets/WebPage.qml" line="459"/>
         <source>Disable Images</source>
         <translation>禁止下载图片</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="458"/>
+        <location filename="../assets/WebPage.qml" line="459"/>
         <source>Enable Images</source>
         <translation>显示图片</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="508"/>
+        <location filename="../assets/WebPage.qml" line="509"/>
         <source>URL</source>
         <translation>地址栏</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="527"/>
+        <location filename="../assets/WebPage.qml" line="528"/>
         <source>Show Bookmarks</source>
         <translation>显示书签</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="538"/>
+        <location filename="../assets/WebPage.qml" line="539"/>
         <source>Show Histories</source>
         <translation>显示历史记录</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="549"/>
+        <location filename="../assets/WebPage.qml" line="550"/>
         <source>Next Tab</source>
         <translation>显示下个标签页</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="462"/>
+        <location filename="../assets/WebPage.qml" line="463"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
@@ -700,7 +761,7 @@
         <translation>文本选择已禁用</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="474"/>
+        <location filename="../assets/WebPage.qml" line="475"/>
         <source>Reload</source>
         <translation>重新载入</translation>
     </message>
@@ -713,17 +774,17 @@
         <translation type="obsolete">主页已设置</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="484"/>
+        <location filename="../assets/WebPage.qml" line="485"/>
         <source>Share URL</source>
         <translation>分享链接</translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="487"/>
+        <location filename="../assets/WebPage.qml" line="488"/>
         <source>Check this out: </source>
         <translation>分享个网页给你： </translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="501"/>
+        <location filename="../assets/WebPage.qml" line="502"/>
         <source>Open with ... </source>
         <translation>打开方式...</translation>
     </message>
