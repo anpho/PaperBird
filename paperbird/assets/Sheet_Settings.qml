@@ -567,13 +567,29 @@ Sheet {
                         horizontalAlignment: HorizontalAlignment.Center
 
                         onClicked: {
-                            configwebview.storage.clear();
-                            _app.clearBookmarks();
-                            _app.clearHistories();
-                            console.log("APP RESETED.");
-                            sst.body = qsTr("App Reseted");
-                            sst.show();
+                            sdreset.show();
                         }
+                        attachedObjects: [
+                            SystemDialog {
+                                id: sdreset
+                                title: qsTr("RESET")
+                                body: qsTr("This will reset all settings, histories, bookmarks. Are you sure?")
+                                returnKeyAction: SystemUiReturnKeyAction.Submit
+                                modality: SystemUiModality.Application
+                                includeRememberMe: false
+                                onFinished: {
+                                    if (value == SystemUiResult.ConfirmButtonSelection) {
+                                        configwebview.storage.clear();
+                                        _app.clearBookmarks();
+                                        _app.clearHistories();
+                                        _app.clearSettings();
+                                        console.log(qsTr("APP RESETED."));
+                                        sst.body = qsTr("App Reseted");
+                                        sst.show();
+                                    }
+                                }
+                            }
+                        ]
                     }
                     Label {
                         text: qsTr("*This will remove all your configurations includes: bookmarks, app cache, web histories, saved passwords, etc.")

@@ -55,6 +55,7 @@ public:
     Q_INVOKABLE void openWith(QString text);
     Q_INVOKABLE bool removeBookmarkBySet(const QString &ids);
     Q_INVOKABLE bool clearBookmarks();
+    Q_INVOKABLE bool clearSettings();
     Q_INVOKABLE bool addBookmark(const QString &title, const QString &uri);
     Q_INVOKABLE bool updateBookmarkByID(const QString &bid, const QString &title, const QString &uri);
     Q_INVOKABLE QString getClipboard();

@@ -12,12 +12,12 @@
     <message>
         <location filename="../src/applicationui.cpp" line="234"/>
         <location filename="../src/applicationui.cpp" line="320"/>
-        <location filename="../src/applicationui.cpp" line="354"/>
+        <location filename="../src/applicationui.cpp" line="357"/>
         <source>Delete table error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="402"/>
+        <location filename="../src/applicationui.cpp" line="405"/>
         <source>Delete bookmark error: %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -424,16 +424,27 @@
     </message>
     <message>
         <location filename="../assets/Sheet_Settings.qml" line="565"/>
+        <location filename="../assets/Sheet_Settings.qml" line="575"/>
         <source>RESET</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="574"/>
+        <location filename="../assets/Sheet_Settings.qml" line="576"/>
+        <source>This will reset all settings, histories, bookmarks. Are you sure?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="586"/>
+        <source>APP RESETED.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="587"/>
         <source>App Reseted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="579"/>
+        <location filename="../assets/Sheet_Settings.qml" line="595"/>
         <source>*This will remove all your configurations includes: bookmarks, app cache, web histories, saved passwords, etc.</source>
         <translation type="unfinished"></translation>
     </message>

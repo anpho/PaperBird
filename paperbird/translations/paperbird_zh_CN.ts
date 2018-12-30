@@ -12,12 +12,12 @@
     <message>
         <location filename="../src/applicationui.cpp" line="234"/>
         <location filename="../src/applicationui.cpp" line="320"/>
-        <location filename="../src/applicationui.cpp" line="354"/>
+        <location filename="../src/applicationui.cpp" line="357"/>
         <source>Delete table error: %1</source>
         <translation>删除数据库表错误： %1</translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="402"/>
+        <location filename="../src/applicationui.cpp" line="405"/>
         <source>Delete bookmark error: %1</source>
         <translation>删除书签错误： %1</translation>
     </message>
@@ -436,16 +436,27 @@
     </message>
     <message>
         <location filename="../assets/Sheet_Settings.qml" line="565"/>
+        <location filename="../assets/Sheet_Settings.qml" line="575"/>
         <source>RESET</source>
         <translation>恢复初始状态</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="574"/>
+        <location filename="../assets/Sheet_Settings.qml" line="576"/>
+        <source>This will reset all settings, histories, bookmarks. Are you sure?</source>
+        <translation>本操作将重置全部设置项、历史记录以及书签，且无法恢复。请问是否继续？</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="586"/>
+        <source>APP RESETED.</source>
+        <translation>应用已重置</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_Settings.qml" line="587"/>
         <source>App Reseted</source>
         <translation>应用设置已重置</translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_Settings.qml" line="579"/>
+        <location filename="../assets/Sheet_Settings.qml" line="595"/>
         <source>*This will remove all your configurations includes: bookmarks, app cache, web histories, saved passwords, etc.</source>
         <translation>*这将删除本应用的全部配置文件，包括：书签、应用缓存、历史记录、保存的密码等等。</translation>
     </message>
@@ -479,22 +490,22 @@
     <message>
         <location filename="../assets/Sheet_barcode.qml" line="13"/>
         <source>Barcode Reader(beta)</source>
-        <translation type="unfinished"></translation>
+        <translation>条码扫描(beta)</translation>
     </message>
     <message>
         <location filename="../assets/Sheet_barcode.qml" line="19"/>
         <source>Close</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <location filename="../assets/Sheet_barcode.qml" line="51"/>
         <source>Scanning...</source>
-        <translation type="unfinished"></translation>
+        <translation>正在扫描……</translation>
     </message>
     <message>
         <location filename="../assets/Sheet_barcode.qml" line="84"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>打开</translation>
     </message>
 </context>
 <context>

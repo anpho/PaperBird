@@ -336,7 +336,10 @@ QString ApplicationUI::getClipboard()
         return "";
     }
 }
-
+bool ApplicationUI::clearSettings(){
+    QSettings settings;
+    settings.clear();
+}
 bool ApplicationUI::clearBookmarks()
 {
     /*
