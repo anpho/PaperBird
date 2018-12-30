@@ -439,6 +439,29 @@
     </message>
 </context>
 <context>
+    <name>Sheet_barcode</name>
+    <message>
+        <location filename="../assets/Sheet_barcode.qml" line="13"/>
+        <source>Barcode Reader(beta)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_barcode.qml" line="19"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_barcode.qml" line="51"/>
+        <source>Scanning...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_barcode.qml" line="84"/>
+        <source>Go</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Tab_Bookmark</name>
     <message>
         <location filename="../assets/Tab_Bookmark.qml" line="26"/>
@@ -567,7 +590,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Tab_Home.qml" line="60"/>
+        <location filename="../assets/Tab_Home.qml" line="76"/>
         <source>Type URL here</source>
         <translation type="unfinished"></translation>
     </message>

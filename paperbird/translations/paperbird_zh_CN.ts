@@ -475,6 +475,29 @@
     </message>
 </context>
 <context>
+    <name>Sheet_barcode</name>
+    <message>
+        <location filename="../assets/Sheet_barcode.qml" line="13"/>
+        <source>Barcode Reader(beta)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_barcode.qml" line="19"/>
+        <source>Close</source>
+        <translation type="unfinished">关闭</translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_barcode.qml" line="51"/>
+        <source>Scanning...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Sheet_barcode.qml" line="84"/>
+        <source>Go</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Tab_Bookmark</name>
     <message>
         <source>unfinished.</source>
@@ -615,7 +638,7 @@
         <translation>纸莺浏览器</translation>
     </message>
     <message>
-        <location filename="../assets/Tab_Home.qml" line="60"/>
+        <location filename="../assets/Tab_Home.qml" line="76"/>
         <source>Type URL here</source>
         <translation>在此输入网址或搜索文本</translation>
     </message>

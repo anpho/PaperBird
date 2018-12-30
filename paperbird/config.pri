@@ -42,6 +42,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/Pin2Home.qml) \
         $$quote($$BASEDIR/assets/Sheet_About.qml) \
         $$quote($$BASEDIR/assets/Sheet_Settings.qml) \
+        $$quote($$BASEDIR/assets/Sheet_barcode.qml) \
         $$quote($$BASEDIR/assets/Tab_Bookmark.qml) \
         $$quote($$BASEDIR/assets/Tab_History.qml) \
         $$quote($$BASEDIR/assets/Tab_Home.qml) \
@@ -182,6 +183,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/icon/rotate.png) \
         $$quote($$BASEDIR/assets/images/BACKGROUND.amd) \
         $$quote($$BASEDIR/assets/images/BACKGROUND.png) \
+        $$quote($$BASEDIR/assets/images/Code_presentation_background.png) \
         $$quote($$BASEDIR/assets/images/icon.png) \
         $$quote($$BASEDIR/assets/images/icon2.png) \
         $$quote($$BASEDIR/assets/images/icon3.png) \

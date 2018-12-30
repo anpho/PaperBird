@@ -18,7 +18,7 @@ Tab {
             ]
             titleBar: TitleBar {
                 title: qsTr("PaperBird Browser")
-                visibility: ChromeVisibility.Visible
+                scrollBehavior: TitleBarScrollBehavior.Sticky
             }
             id: pageroot
             //            actionBarVisibility: ChromeVisibility.Hidden
@@ -28,11 +28,14 @@ Tab {
                 }
                 verticalAlignment: VerticalAlignment.Fill
                 horizontalAlignment: HorizontalAlignment.Fill
-                topPadding: 50.0
-                leftPadding: 20.0
-                rightPadding: 20.0
-                bottomPadding: 50.0
+                ImageView {
+                    imageSource: "asset:///images/Code_presentation_background.png"
+                    scalingMethod: ScalingMethod.AspectFill
+                    enabled: false
+                    verticalAlignment: VerticalAlignment.Fill
+                    horizontalAlignment: HorizontalAlignment.Fill
 
+                }
                 Container {
                     horizontalAlignment: HorizontalAlignment.Fill
                     verticalAlignment: VerticalAlignment.Center
@@ -42,10 +45,23 @@ Tab {
 
                     }
 
+                    leftPadding: 20.0
+                    rightPadding: 20.0
                     Button {
                         imageSource: "asset:///icon/ic_scan_barcode.png"
                         appearance: ControlAppearance.Default
                         preferredWidth: 1.0
+                        onClicked: {
+                            barcode.open();
+                        }
+                        attachedObjects: [
+                            Sheet_barcode {
+                                id: barcode
+                                onRequest_open_or_search: {
+                                    request_open(u);
+                                }
+                            }
+                        ]
                         
                     }
                     Button {
