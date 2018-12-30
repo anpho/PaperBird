@@ -409,7 +409,7 @@ Sheet {
                     SegmentedControl {
                         options: [
                             Option {
-                                text: qsTr("Bookmark")
+                                text: qsTr("Start Page")
                             },
                             Option {
                                 text: qsTr("Homepage")
@@ -418,7 +418,7 @@ Sheet {
                                 text: qsTr("Blankpage")
                             }
                         ]
-                        selectedIndex: parseInt(_app.getv("startup", "2"))
+                        selectedIndex: parseInt(_app.getv("startup", "0"))
                         onSelectedIndexChanged: {
                             _app.setv("startup", selectedIndex)
                         }

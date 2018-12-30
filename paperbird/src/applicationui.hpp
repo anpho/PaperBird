@@ -57,6 +57,7 @@ public:
     Q_INVOKABLE bool clearBookmarks();
     Q_INVOKABLE bool addBookmark(const QString &title, const QString &uri);
     Q_INVOKABLE bool updateBookmarkByID(const QString &bid, const QString &title, const QString &uri);
+    Q_INVOKABLE QString getClipboard();
     ApplicationUI();
     ~ApplicationUI();
     Q_SLOT void onInvoke(const bb::system::InvokeRequest& invoke);

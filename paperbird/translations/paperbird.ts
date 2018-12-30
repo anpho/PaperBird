@@ -4,20 +4,20 @@
 <context>
     <name>ApplicationUI</name>
     <message>
-        <location filename="../src/applicationui.cpp" line="144"/>
-        <location filename="../src/applicationui.cpp" line="159"/>
+        <location filename="../src/applicationui.cpp" line="145"/>
+        <location filename="../src/applicationui.cpp" line="160"/>
         <source>Create table error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="233"/>
-        <location filename="../src/applicationui.cpp" line="319"/>
-        <location filename="../src/applicationui.cpp" line="341"/>
+        <location filename="../src/applicationui.cpp" line="234"/>
+        <location filename="../src/applicationui.cpp" line="320"/>
+        <location filename="../src/applicationui.cpp" line="354"/>
         <source>Delete table error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="389"/>
+        <location filename="../src/applicationui.cpp" line="402"/>
         <source>Delete bookmark error: %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -367,7 +367,7 @@
     </message>
     <message>
         <location filename="../assets/Sheet_Settings.qml" line="412"/>
-        <source>Bookmark</source>
+        <source>Start Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -560,6 +560,19 @@
     </message>
 </context>
 <context>
+    <name>Tab_Home</name>
+    <message>
+        <location filename="../assets/Tab_Home.qml" line="20"/>
+        <source>PaperBird Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Tab_Home.qml" line="60"/>
+        <source>Type URL here</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Tab_PageTemplate</name>
     <message>
         <location filename="../assets/Tab_PageTemplate.qml" line="5"/>
@@ -729,36 +742,41 @@
     <name>main</name>
     <message>
         <location filename="../assets/main.qml" line="43"/>
-        <source>Bookmark</source>
+        <source>Start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="52"/>
-        <source>History</source>
+        <source>Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="61"/>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="70"/>
         <source>New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="68"/>
+        <location filename="../assets/main.qml" line="77"/>
         <source>&quot;%1&quot; Closed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="96"/>
+        <location filename="../assets/main.qml" line="105"/>
         <source>Undo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="130"/>
+        <location filename="../assets/main.qml" line="139"/>
         <source>Review</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="137"/>
+        <location filename="../assets/main.qml" line="146"/>
         <source>Feedback</source>
         <translation type="unfinished"></translation>
     </message>

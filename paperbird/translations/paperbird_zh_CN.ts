@@ -4,20 +4,20 @@
 <context>
     <name>ApplicationUI</name>
     <message>
-        <location filename="../src/applicationui.cpp" line="144"/>
-        <location filename="../src/applicationui.cpp" line="159"/>
+        <location filename="../src/applicationui.cpp" line="145"/>
+        <location filename="../src/applicationui.cpp" line="160"/>
         <source>Create table error: %1</source>
         <translation>创建数据库表错误： %1</translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="233"/>
-        <location filename="../src/applicationui.cpp" line="319"/>
-        <location filename="../src/applicationui.cpp" line="341"/>
+        <location filename="../src/applicationui.cpp" line="234"/>
+        <location filename="../src/applicationui.cpp" line="320"/>
+        <location filename="../src/applicationui.cpp" line="354"/>
         <source>Delete table error: %1</source>
         <translation>删除数据库表错误： %1</translation>
     </message>
     <message>
-        <location filename="../src/applicationui.cpp" line="389"/>
+        <location filename="../src/applicationui.cpp" line="402"/>
         <source>Delete bookmark error: %1</source>
         <translation>删除书签错误： %1</translation>
     </message>
@@ -375,8 +375,12 @@
     </message>
     <message>
         <location filename="../assets/Sheet_Settings.qml" line="412"/>
+        <source>Start Page</source>
+        <translation>开始页面</translation>
+    </message>
+    <message>
         <source>Bookmark</source>
-        <translation>书签</translation>
+        <translation type="obsolete">书签</translation>
     </message>
     <message>
         <location filename="../assets/Sheet_Settings.qml" line="418"/>
@@ -604,6 +608,19 @@
     </message>
 </context>
 <context>
+    <name>Tab_Home</name>
+    <message>
+        <location filename="../assets/Tab_Home.qml" line="20"/>
+        <source>PaperBird Browser</source>
+        <translation>纸莺浏览器</translation>
+    </message>
+    <message>
+        <location filename="../assets/Tab_Home.qml" line="60"/>
+        <source>Type URL here</source>
+        <translation>在此输入网址或搜索文本</translation>
+    </message>
+</context>
+<context>
     <name>Tab_PageTemplate</name>
     <message>
         <location filename="../assets/Tab_PageTemplate.qml" line="5"/>
@@ -793,26 +810,31 @@
     <name>main</name>
     <message>
         <location filename="../assets/main.qml" line="43"/>
+        <source>Start</source>
+        <translation>开始页面</translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="52"/>
         <source>Bookmark</source>
         <translation>书签</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="52"/>
+        <location filename="../assets/main.qml" line="61"/>
         <source>History</source>
         <translation>历史记录</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="61"/>
+        <location filename="../assets/main.qml" line="70"/>
         <source>New Window</source>
         <translation>新建窗口</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="68"/>
+        <location filename="../assets/main.qml" line="77"/>
         <source>&quot;%1&quot; Closed</source>
         <translation>“%1” 已关闭</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="96"/>
+        <location filename="../assets/main.qml" line="105"/>
         <source>Undo</source>
         <translation>撤销</translation>
     </message>
@@ -821,12 +843,12 @@
         <translation type="obsolete">%1 已关闭</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="130"/>
+        <location filename="../assets/main.qml" line="139"/>
         <source>Review</source>
         <translation>评分</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="137"/>
+        <location filename="../assets/main.qml" line="146"/>
         <source>Feedback</source>
         <translation>反馈</translation>
     </message>

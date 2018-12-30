@@ -9,7 +9,7 @@ TabbedPane {
     onCreationCompleted: {
         _app.open_a_new_tab_for_me.connect(open_new_tab);
         Application.aboutToQuit.connect(app_exit_slot);
-        var startupmode = parseInt(_app.getv("startup", "2"));
+        var startupmode = parseInt(_app.getv("startup", "0"));
         switch (startupmode) {
             case 0:
                 break;
@@ -38,6 +38,15 @@ TabbedPane {
         }
     }
 
+    Tab_Home {
+        id: tab_home
+        title: qsTr("Start")
+        imageSource: "asset:///icon/ic_home.png"
+        onRequest_open: {
+            console.log("REQUEST OPEN: " + bookmarkurl)
+            webnest.open_new_window(bookmarkurl)
+        }
+    }
     Tab_Bookmark {
         id: tab_bookmark
         title: qsTr("Bookmark")
@@ -109,7 +118,7 @@ TabbedPane {
     sidebarState: SidebarState.VisibleCompact
     onActiveTabChanged: {
     }
-    activeTab: tab_bookmark
+    activeTab: tab_home
     Menu.definition: MenuDefinition {
         helpAction: HelpActionItem {
             onTriggered: {

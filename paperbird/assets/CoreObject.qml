@@ -32,7 +32,7 @@ QtObject {
         tabhost.remove(handle)
         // active the left tab begin
         var newactivepos = tabhost.count() - 1;
-        if (newactivepos == 2) {
+        if (newactivepos == 3) {
             newactivepos = 0;
         }
         tabhost.activeTab = tabhost.at(newactivepos)

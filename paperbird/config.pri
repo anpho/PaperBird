@@ -44,6 +44,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/Sheet_Settings.qml) \
         $$quote($$BASEDIR/assets/Tab_Bookmark.qml) \
         $$quote($$BASEDIR/assets/Tab_History.qml) \
+        $$quote($$BASEDIR/assets/Tab_Home.qml) \
         $$quote($$BASEDIR/assets/Tab_PageTemplate.qml) \
         $$quote($$BASEDIR/assets/WebPage.qml) \
         $$quote($$BASEDIR/assets/colors.xml) \
@@ -184,6 +185,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/images/icon.png) \
         $$quote($$BASEDIR/assets/images/icon2.png) \
         $$quote($$BASEDIR/assets/images/icon3.png) \
+        $$quote($$BASEDIR/assets/images/icon4.png) \
         $$quote($$BASEDIR/assets/images/merrick.png) \
         $$quote($$BASEDIR/assets/main.qml)
 }

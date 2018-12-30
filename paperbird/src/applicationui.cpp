@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
+#include "qobject.h"
 #include "applicationui.hpp"
-
+#include <bb/system/Clipboard>
 #include <bb/cascades/Application>
 #include <bb/cascades/QmlDocument>
 #include <bb/cascades/AbstractPane>
@@ -49,7 +50,7 @@ ApplicationUI::ApplicationUI() :
     // initial load
     onSystemLanguageChanged();
 
-	// init database for history and bookmarks usage.
+    // init database for history and bookmarks usage.
     initDatabase();
 
     // Create scene document from main.qml asset, the parent is set
@@ -80,7 +81,7 @@ void ApplicationUI::onSystemLanguageChanged()
 
 QString ApplicationUI::getv(const QString &objectName, const QString &defaultValue)
 {
-	// This method returns a config value, if invalid, return 2nd param.
+    // This method returns a config value, if invalid, return 2nd param.
     QSettings settings;
     if (settings.value(objectName).isNull()) {
         return defaultValue;
@@ -91,7 +92,7 @@ QString ApplicationUI::getv(const QString &objectName, const QString &defaultVal
 
 void ApplicationUI::setv(const QString &objectName, const QString &inputValue)
 {
-	// This method create / set a config key/value pair.
+    // This method create / set a config key/value pair.
     QSettings settings;
     settings.setValue(objectName, QVariant(inputValue));
     qDebug() << "[SETTINGS]" << objectName << " set to " << inputValue;
@@ -324,6 +325,18 @@ bool ApplicationUI::clearHistories()
  * BOOKMARK FEATURE
  */
 
+QString ApplicationUI::getClipboard()
+{
+    bb::system::Clipboard clipboard;
+    QByteArray data = clipboard.value("text/plain");
+    if (!data.isEmpty()) {
+        QString content = QString::fromUtf8(data, data.size());
+        return content;
+    } else {
+        return "";
+    }
+}
+
 bool ApplicationUI::clearBookmarks()
 {
     /*
@@ -430,19 +443,19 @@ bool ApplicationUI::updateBookmarkByID(const QString &bid, const QString &title,
 
 void ApplicationUI::onInvoke(const bb::system::InvokeRequest& invoke)
 {
-	// this is the receiver when app is invoked via other apps,
-	// for example, when in system browser and select "open with / paperbird"
+    // this is the receiver when app is invoked via other apps,
+    // for example, when in system browser and select "open with / paperbird"
 
     QString target_url = invoke.uri().toString();
     if (target_url.length() > 0) {
-        if (target_url.startsWith("anpho:")){
-            target_url.remove(0,6);
+        if (target_url.startsWith("anpho:")) {
+            target_url.remove(0, 6);
         }
-        qDebug()<<"using target url : "<< target_url;
+        qDebug() << "using target url : " << target_url;
         emit open_a_new_tab_for_me(target_url);
     } else {
         target_url = QString(invoke.data());
-        qDebug()<<"using data : "<< target_url;
+        qDebug() << "using data : " << target_url;
         emit open_a_new_tab_for_me(target_url);
     }
 

@@ -25,6 +25,7 @@
 #include <Qt/qdeclarativedebug.h>
 #include <unistd.h>
 #include "WebImageView.h"
+
 using namespace bb::cascades;
 using namespace bb::system;
 Q_DECL_EXPORT int main(int argc, char **argv)
@@ -34,7 +35,6 @@ Q_DECL_EXPORT int main(int argc, char **argv)
         qputenv("CASCADES_THEME", settings.value("theme").toString().toUtf8());
     }
     qmlRegisterType<WebImageView>("cn.anpho", 1, 0, "WebImageView");
-
 //    sleep(1);
 
 

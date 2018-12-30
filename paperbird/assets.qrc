@@ -8,6 +8,7 @@
 	<file>assets/Sheet_Settings.qml</file>
 	<file>assets/Tab_Bookmark.qml</file>
 	<file>assets/Tab_History.qml</file>
+	<file>assets/Tab_Home.qml</file>
 	<file>assets/Tab_PageTemplate.qml</file>
 	<file>assets/WebPage.qml</file>
 	<file>assets/BookmarkEditDialog.qml</file>

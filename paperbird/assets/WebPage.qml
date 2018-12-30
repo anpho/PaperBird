@@ -81,7 +81,7 @@ Page {
                 scrollRole: ScrollRole.Main
                 WebView {
                     id: webv
-                    url: "local:///assets/blank"
+//                    url: "local:///assets/blank"
                     horizontalAlignment: HorizontalAlignment.Fill
                     onUrlChanged: {
 
