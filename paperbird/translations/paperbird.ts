@@ -462,13 +462,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Sheet_barcode.qml" line="51"/>
+        <location filename="../assets/Sheet_barcode.qml" line="54"/>
         <source>Scanning...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../assets/Sheet_barcode.qml" line="84"/>
-        <source>Go</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -596,12 +591,12 @@
 <context>
     <name>Tab_Home</name>
     <message>
-        <location filename="../assets/Tab_Home.qml" line="20"/>
+        <location filename="../assets/Tab_Home.qml" line="27"/>
         <source>PaperBird Browser</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Tab_Home.qml" line="76"/>
+        <location filename="../assets/Tab_Home.qml" line="90"/>
         <source>Type URL here</source>
         <translation type="unfinished"></translation>
     </message>
@@ -617,157 +612,157 @@
 <context>
     <name>WebPage</name>
     <message>
-        <location filename="../assets/WebPage.qml" line="232"/>
+        <location filename="../assets/WebPage.qml" line="260"/>
         <source>Type URL here</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="325"/>
+        <location filename="../assets/WebPage.qml" line="353"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="635"/>
+        <location filename="../assets/WebPage.qml" line="669"/>
         <source>Confirm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="636"/>
+        <location filename="../assets/WebPage.qml" line="670"/>
         <source>Do you want to close current Tab?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="338"/>
+        <location filename="../assets/WebPage.qml" line="366"/>
         <source>Go Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="129"/>
+        <location filename="../assets/WebPage.qml" line="147"/>
         <source>Text Selection Enabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="133"/>
+        <location filename="../assets/WebPage.qml" line="149"/>
         <source>Text Selection Disabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="349"/>
+        <location filename="../assets/WebPage.qml" line="377"/>
         <source>Go Forward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="360"/>
+        <location filename="../assets/WebPage.qml" line="388"/>
         <source>Lock Oriention</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="372"/>
+        <location filename="../assets/WebPage.qml" line="400"/>
         <source>Lock Landscape</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="373"/>
+        <location filename="../assets/WebPage.qml" line="401"/>
         <source>Lock Portrait</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="374"/>
+        <location filename="../assets/WebPage.qml" line="402"/>
         <source>Not Locked</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="384"/>
+        <location filename="../assets/WebPage.qml" line="412"/>
         <source>Rotation Lock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="385"/>
+        <location filename="../assets/WebPage.qml" line="413"/>
         <source>If you want to lock the screen rotation, check it here. All settings will be reseted when app exits.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="408"/>
+        <location filename="../assets/WebPage.qml" line="436"/>
         <source>Add Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="413"/>
+        <location filename="../assets/WebPage.qml" line="441"/>
         <source>Bookmark Created</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="416"/>
+        <location filename="../assets/WebPage.qml" line="444"/>
         <source>Bookmark Creation Failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="427"/>
+        <location filename="../assets/WebPage.qml" line="455"/>
         <source>Set Homepage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="432"/>
+        <location filename="../assets/WebPage.qml" line="460"/>
         <source>Homepage Set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="442"/>
+        <location filename="../assets/WebPage.qml" line="470"/>
         <source>Pin to Homescreen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="459"/>
+        <location filename="../assets/WebPage.qml" line="487"/>
         <source>Disable Images</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="459"/>
+        <location filename="../assets/WebPage.qml" line="487"/>
         <source>Enable Images</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="509"/>
+        <location filename="../assets/WebPage.qml" line="537"/>
         <source>URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="528"/>
+        <location filename="../assets/WebPage.qml" line="556"/>
         <source>Show Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="539"/>
+        <location filename="../assets/WebPage.qml" line="567"/>
         <source>Show Histories</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="550"/>
+        <location filename="../assets/WebPage.qml" line="578"/>
         <source>Next Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="463"/>
+        <location filename="../assets/WebPage.qml" line="491"/>
         <source>Stop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="475"/>
+        <location filename="../assets/WebPage.qml" line="503"/>
         <source>Reload</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="485"/>
+        <location filename="../assets/WebPage.qml" line="513"/>
         <source>Share URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="488"/>
+        <location filename="../assets/WebPage.qml" line="516"/>
         <source>Check this out: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/WebPage.qml" line="502"/>
+        <location filename="../assets/WebPage.qml" line="530"/>
         <source>Open with ... </source>
         <translation type="unfinished"></translation>
     </message>

@@ -55,7 +55,7 @@
     <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
          Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
          An updated version of application must have a versionNumber value higher than the previous version. Required. -->
-    <versionNumber>2.0.18</versionNumber>
+    <versionNumber>2.0.20</versionNumber>
 
     <!-- Fourth digit segment of the package version. First three segments are taken from the
          <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
@@ -80,7 +80,7 @@
     </icon>
     <authorId>gYAAgMy-I-SFJtVvioZxVXYQjhA</authorId>
     <author>anpho</author>
-    <buildId>1230</buildId>
+    <buildId>618</buildId>
 
     <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
     <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
@@ -104,7 +104,7 @@
     </asset>
     <asset path="icon2.png">icon2.png</asset>
     <asset path="icon3.png">icon3.png</asset>
-    <asset path="icon4.png">icon4.png</asset>
+    <asset public="true" path="icon4.png">icon4.png</asset>
 
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>

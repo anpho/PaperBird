@@ -39,6 +39,9 @@ Sheet {
                             console.log("scanned: ");
                             console.log(data);
                             scanned_text.setText(data)
+                            request_open_or_search(data)
+                            camera.close();
+                            sheetroot.close();
                         }
                     }
                 ]
@@ -58,7 +61,7 @@ Sheet {
             }
             Container {
                 layoutProperties: StackLayoutProperties {
-                    spaceQuota: 1.0
+
                 }
                 TextArea {
                     editable: true
@@ -71,29 +74,7 @@ Sheet {
                 }
             }
         }
-        actions: [
-            ActionItem {
-                ActionBar.placement: ActionBarPlacement.Signature
-                imageSource: "asset:///icon/ic_go_to.png"
-                enabled: scanned_text.text.length > 0
-                onTriggered: {
-                    request_open_or_search(scanned_text.text);
-                    camera.close();
-                    sheetroot.close();
-                }
-                title: qsTr("Go")
 
-            },
-            ActionItem {
-                ActionBar.placement: ActionBarPlacement.OnBar
-                imageSource: "asset:///icon/ic_reload.png"
-                title: "Reset"
-                onTriggered: {
-                    camera.close()
-                    camera.open();
-                }
-            }
-        ]
     }
 
 }

@@ -1,4 +1,12 @@
-﻿2018.12.30
+﻿2020.6.17
+修复UI问题多处
+Fixed several UI bugs
+修改二维码扫描器界面，扫描后自动导航
+Improved QR code scanner
+动画由300ms降至150ms
+Adjusted animation speed.
+
+2018.12.30
 今天是我的好兄弟刘洪波的婚礼，没能参加，很是遗憾。下午在家，越想越难受，爬起来更新一下app，以兹纪念。
 Today is EML hongbo(my best bro)'s wedding day, but I can't attend. I'm sorry.
 +应用起始页

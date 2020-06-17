@@ -24,7 +24,7 @@ Sheet {
                 bottomPadding: 40.0
 
                 ImageView {
-                    imageSource: "asset:///images/icon3.png"
+                    imageSource: "asset:///images/icon4.png"
                     scalingMethod: ScalingMethod.AspectFit
                     horizontalAlignment: HorizontalAlignment.Center
                     verticalAlignment: VerticalAlignment.Top
