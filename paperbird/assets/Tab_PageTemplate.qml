@@ -13,6 +13,10 @@ Tab {
     signal request_next_tab();
     // page url
     property alias uri: pageroot.uri
+    function loadurl(u){
+        uri = u
+        pageroot.uriChanged()
+    }
     WebPage {
         id: pageroot
         onRequest_close_: {

@@ -6,6 +6,13 @@ Tab {
     function updateview() {
     }
     signal request_open(string bookmarkurl)
+    
+    function  openPage(u) {
+        /*
+         * Open page in new tab.
+         */
+        request_open(u)
+    }
 
     delegate: Delegate {
         Page {
@@ -49,17 +56,23 @@ Tab {
                     rightPadding: 20.0
                     Button {
                         imageSource: "asset:///icon/ic_scan_barcode.png"
-                        appearance: ControlAppearance.Default
+                        appearance: ControlAppearance.Primary
                         preferredWidth: 1.0
                         onClicked: {
-                            barcode.open();
+                            /*
+                             * Dymantically load QR scanner Sheet
+                             */
+                            var qrcode_scanner = qrscanner_qml.createObject(pageroot)
+                            qrcode_scanner.request_open_or_search.connect(openPage)
+                            qrcode_scanner.open()
                         }
                         attachedObjects: [
-                            Sheet_barcode {
-                                id: barcode
-                                onRequest_open_or_search: {
-                                    request_open(u);
-                                }
+                            ComponentDefinition {
+                                /*
+                                 * QML of QR Scanner
+                                 */
+                                id: qrscanner_qml
+                                source: "Sheet_barcode.qml"
                             }
                         ]
                         
@@ -70,6 +83,7 @@ Tab {
                         onClicked: {
                             address_text_input.setText(_app.getClipboard());
                         }
+                        appearance: ControlAppearance.Primary
                     }
                     TextField {
                         id: address_text_input

@@ -11,17 +11,30 @@ Page {
     signal request_nextTab()
     property alias title: webv.title
     property string uri: ""
+    property bool disable_selection: true
     onUriChanged: {
         if (uri.trim().length == 0) {
-            //            bottomlabel.visible = true;
-            showbottomlabel.play()
-            address_text_input.requestFocus();
+            /*
+             * blank page
+             */
         } else if (uri.indexOf(":") > 0) {
+            /*
+             * includes some protocol, whatever, if there's ":", just load.
+             */
             webv.url = uri
+            hidebottomlabel.play()
         } else if (uri.indexOf(".") > 0) {
+            /*
+             * if there's any . in url, try load it as http
+             */
             webv.url = "http://" + uri
+            hidebottomlabel.play()
         } else {
+            /*
+             * otherwise, go search.
+             */
             webv.url = _app.getv("searchurl", "http://bing.com/search?q=%1").arg(uri);
+            hidebottomlabel.play()
         }
     }
     property bool showImages: _app.getv("showimage", "true") == "true"
@@ -59,7 +72,7 @@ Page {
                 //hide address bar
                 hidebottomlabel.play()
             }
-            
+
             ScrollView {
                 id: sv
                 verticalAlignment: VerticalAlignment.Fill
@@ -81,7 +94,7 @@ Page {
                 scrollRole: ScrollRole.Main
                 WebView {
                     id: webv
-//                    url: "local:///assets/blank"
+                    //                    url: "local:///assets/blank"
                     horizontalAlignment: HorizontalAlignment.Fill
                     onUrlChanged: {
 
@@ -123,24 +136,33 @@ Page {
                     ]
                     gestureHandlers: [
                         DoubleTapHandler {
+                            /*
+                             * Enable/Disable text selection
+                             * This feature is used to fix the selection bug of BBOS10
+                             * Well, a very ugly fix.
+                             */
                             onDoubleTapped: {
-                                if (webv.settings.userStyleSheetLocation != ""){
-                                    webv.settings.userStyleSheetLocation = "";
+                                disable_selection = ! disable_selection
+                                if (! disable_selection) {
                                     sstt.body = qsTr("Text Selection Enabled");
-                                    sstt.show();
-                                }else{
-                                    webv.settings.userStyleSheetLocation = "asset:///disable_selection.css";
+                                } else {
                                     sstt.body = qsTr("Text Selection Disabled");
-                                    sstt.show();
                                 }
+                                sstt.show();
                             }
                         }
                     ]
                     onNavigationRequested: {
                         if (request.navigationType == WebNavigationType.OpenWindow) {
+                            /*
+                             * if open new window is called, just open a new tab.
+                             */
                             request.action = WebNavigationRequestAction.Ignore
                             request_new_window_(request.url)
                         } else {
+                            /*
+                             * do nothing
+                             */
                             sv.resetScale()
                         }
                     }
@@ -155,7 +177,7 @@ Page {
                         invisible_webview.stop()
                     }
                     implicitLayoutAnimationsEnabled: false
-                    settings.userStyleSheetLocation: "asset:///disable_selection.css"
+                    settings.userStyleSheetLocation: disable_selection ? "asset:///disable_selection.css" : ""
                     settings.imageDownloadingEnabled: showImages
                 }
                 scrollViewProperties.initialScalingMethod: ScalingMethod.AspectFill
@@ -170,8 +192,11 @@ Page {
 
                 }
                 Label {
+                    /*
+                     * Fix blank addressbar when loading url.
+                     */
                     text: webv.loading ? webv.url : webv.title
-                    textStyle.fontSize: FontSize.XXSmall
+                    textStyle.fontSize: FontSize.XSmall
                     textStyle.color: Color.White
                     horizontalAlignment: HorizontalAlignment.Fill
                 }
@@ -180,13 +205,16 @@ Page {
                     toValue: 100.0
                     horizontalAlignment: HorizontalAlignment.Fill
                     preferredHeight: 1.0
-                    visible: value < 99
+                    visible: (value < 99) && (value > 10)
+                    /*
+                     * make progessbar invisible when beginning or end.
+                     */
                     verticalAlignment: VerticalAlignment.Bottom
                     opacity: 0.7
                 }
                 onTouch: {
                     showbottomlabel.play()
-                    address_text_input.requestFocus()
+
                 }
             }
         }
@@ -250,7 +278,7 @@ Page {
                 onFocusedChanged: {
                     if (focused) {
                         editor.setSelection(0, text.length);
-                    }else {
+                    } else {
                         hidebottomlabelwithDealy.play()
                     }
                 }
@@ -299,26 +327,26 @@ Page {
             }
 
         }
-//        Container {
-//            visible: webv.loading
-//            horizontalAlignment: HorizontalAlignment.Center
-//            verticalAlignment: VerticalAlignment.Top
-//            layout: StackLayout {
-//                orientation: LayoutOrientation.LeftToRight
-//            }
-//            background: Color.create("#77000000")
-//            leftPadding: 40.0
-//            rightPadding: 40.0
-//            topPadding: 10.0
-//            bottomPadding: 10.0
-//            ActivityIndicator {
-//                running: true
-//            }
-//            Label {
-//                text: qsTr("Loading...")
-//                textStyle.color: Color.White
-//            }
-//        }
+        //        Container {
+        //            visible: webv.loading
+        //            horizontalAlignment: HorizontalAlignment.Center
+        //            verticalAlignment: VerticalAlignment.Top
+        //            layout: StackLayout {
+        //                orientation: LayoutOrientation.LeftToRight
+        //            }
+        //            background: Color.create("#77000000")
+        //            leftPadding: 40.0
+        //            rightPadding: 40.0
+        //            topPadding: 10.0
+        //            bottomPadding: 10.0
+        //            ActivityIndicator {
+        //                running: true
+        //            }
+        //            Label {
+        //                text: qsTr("Loading...")
+        //                textStyle.color: Color.White
+        //            }
+        //        }
     }
     actions: [
         DeleteActionItem {
@@ -440,7 +468,7 @@ Page {
         },
         ActionItem {
             title: qsTr("Pin to Homescreen")
-            imageSource: "asset:///icon/ic_homex.png"            
+            imageSource: "asset:///icon/ic_homex.png"
             ActionBar.placement: ActionBarPlacement.InOverflow
             onTriggered: {
                 var absheet = Qt.createComponent("Pin2Home.qml").createObject(pageroot);
@@ -583,7 +611,7 @@ Page {
                 showtoplabel.play()
             }
             onEnded: {
-                
+                address_text_input.requestFocus();
             }
         },
         ParallelAnimation {
@@ -593,9 +621,11 @@ Page {
             animations: [
                 TranslateTransition {
                     toX: 150
+                    duration: 150
                 },
                 RotateTransition {
                     toAngleZ: 180
+                    duration: 150
                 }
             ]
         },
@@ -606,9 +636,11 @@ Page {
             animations: [
                 TranslateTransition {
                     toX: 150
+                    duration: 150
                 },
                 RotateTransition {
                     toAngleZ: 180
+                    duration: 150
                 }
             ]
             delay: 1000
@@ -620,9 +652,11 @@ Page {
             animations: [
                 TranslateTransition {
                     toX: 0
+                    duration: 150
                 },
                 RotateTransition {
                     toAngleZ: 0
+                    duration: 150
                 }
             ]
             onEnded: {
@@ -645,8 +679,8 @@ Page {
     ]
     actionBarVisibility: ChromeVisibility.Hidden
     onCreationCompleted: {
+        console.debug("[WEBPAGE]Creation Completed.")
         if (uri.length == 0) {
-            //            bottomlabel.visible = true;
             showbottomlabel.play()
             address_text_input.requestFocus();
         }
